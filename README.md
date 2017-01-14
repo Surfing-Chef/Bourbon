@@ -8,12 +8,15 @@ The mixin library that is **[Bourbon](http://bourbon.io/)** combines with the gr
 
 #### Installation and Setup
 - A few assumptions: basic knowledge of Git and Github, CSS, SASS, Gulp, and the command terminal
-- Bourbon-Chef requires [Node.js](https://nodejs.org/en/), specifically NPM (node package manager), to load packages for Gulp and Sass -   ensure the [latest version](https://github.com/Surfing-Chef/Bourbon/wiki/Latest-Node.js-and-Gulp) is installed on your machine.  
+- Bourbon-Chef requires that [Ruby](http://rubyinstaller.org/) is installed on your machine.  Setup [Ruby, Sass and Bourbon](https://github.com/Surfing-Chef/Bourbon/wiki/Ruby-and-Bourbon).
+- Bourbon-Chef also requires that [Node.js](https://nodejs.org/en/), more specifically NPM (node package manager)is installed on your machine to load packages for Gulp - ensure the [latest version](https://github.com/Surfing-Chef/Bourbon/wiki/Latest-Node.js-and-Gulp) is installed on your machine.  
 - Once Gulp is installed globally, set up a [package.json](https://github.com/Surfing-Chef/Bourbon/wiki/package.json) and install Gulp into your project
 
 
 #### Version Control
-1.0.0 - Basic project, no gulp.
+1.0.0 - Basic project structure
+1.0.1 - Basic project, no gulp
+
 
 #### References
 [Bourbon](http://bourbon.io/)  
