@@ -7,10 +7,11 @@ The Bourbon-Chef workflow is based on some experimenting I did in the [underscor
 The mixin library that is **[Bourbon](http://bourbon.io/)** combines with the grid framework of **[Neat](http://neat.bourbon.io/)** to give Bourbon-Chef its *Sass-y* flexibility. Adding **[Bitters'](http://bitters.bourbon.io/)** scaffold styles, variables and structure gives a consistant feel to the project, while **[Refills](http://refills.bourbon.io/)** contributes reliable components and patterns built with both **Bourbon** and **Neat**.  The Gulp toolkit automates **Bourbon-Chef's** ingredients, allowing for a front end development workflow focused more on design and content.
 
 #### Installation and Setup
-- A few assumptions: basic knowledge of Git and Github, CSS, SASS, Gulp, and the command terminal
-- Bourbon-Chef requires that [Ruby](http://rubyinstaller.org/) is installed on your machine.  Setup [Ruby, Sass and Bourbon](https://github.com/Surfing-Chef/Bourbon/wiki/Ruby-and-Bourbon).
-- [Create a Bourbon Project](https://github.com/Surfing-Chef/Bourbon/wiki/Create-a-Bourbon-Project)
-- Running the following command in your terminal, from within the sass directory, will start Sass watching the ***sass*** folder for changes to the ***style.scss*** file and automatically write them to the ***style.css*** file in the **css** folder: 
+Basic knowledge of Git and Github, CSS, SASS, Gulp, and the command terminal are essential to the setup process.  
+
+1. Bourbon-Chef requires that [Ruby](http://rubyinstaller.org/) is installed on your machine.  Setup [Ruby, Sass and Bourbon](https://github.com/Surfing-Chef/Bourbon/wiki/Ruby-and-Bourbon).
+2. [Create a Bourbon Project](https://github.com/Surfing-Chef/Bourbon/wiki/Create-a-Bourbon-Project) is created
+3. Running the following command in your terminal, from within the sass directory, will start Sass watching the ***sass*** folder for changes to the ***style.scss*** file and automatically write them to the ***style.css*** file in the **css** folder: 
 ```console
 >sass--watch style.scss:css/style.css
 ```  
