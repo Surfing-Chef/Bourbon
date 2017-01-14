@@ -15,7 +15,6 @@ The mixin library that is **[Bourbon](http://bourbon.io/)** combines with the gr
 
 #### Version Control
 1.0.0 - Basic project structure
-1.0.1 - Basic project, no gulp
 
 
 #### References
