@@ -51,7 +51,7 @@ gulp.task('html', function(){
 gulp.task('browser-sync', function(){
   browserSync({
     server:{
-      baseDir: './'
+      baseDir: './app/'
     }
   });
 });
@@ -65,7 +65,7 @@ gulp.task('build:cleanfolder', function(){
 });
 // create build directory for all files
 gulp.task('build:copy', function(){
-  return gulp.src('**/*/')
+  return gulp.src('app/**/*/')
   .pipe(gulp.dest('build'));
 });
 
