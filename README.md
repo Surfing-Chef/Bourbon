@@ -26,7 +26,7 @@ Basic knowledge of Git and Github, CSS, SASS, Gulp, and the command terminal are
 1.2.0 - Installed Gulp into project 
 1.2.1 - Installed the Gulp packages into project directory via package.json  
 1.2.2 - Set up a gulpfile.js  
-1.2.3 - Configured gulp tasks 
+1.2.3 - Configured gulp tasks   
 1.2.4 - Added build tasks to gulpfile.js
 
 #### References
