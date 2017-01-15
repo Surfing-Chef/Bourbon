@@ -23,7 +23,7 @@ Basic knowledge of Git and Github, CSS, SASS, Gulp, and the command terminal are
 #### Version Control
 1.0.0 - Basic project structure   
 1.0.1 - Basic HTML and SCSS  
-1.1.0 - Installed Bourbon components  
+1.1.0 - Installed Bourbon components - (note that newer versions of Bourbon and Bitters don't match the Docs at (http://bourbon.io/)) 
 1.1.1 - Created and imported master directories  
 1.2.0 - Installed Gulp into project  
 1.2.1 - Installed the Gulp packages into project directory via package.json  
