@@ -1,5 +1,5 @@
 {
-  "name": "bourbon",
+  "name": "bourbon-chef",
   "version": "1.2.0",
   "description": "A Bourbon and Gulp build system",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/Surfing-Chef/Bourbon.git"
   },
   "keywords": [
-    "gilp",
+    "gulp",
     "bourbon",
     "bitters",
     "neat"
