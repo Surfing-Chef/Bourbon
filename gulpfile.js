@@ -46,7 +46,7 @@ gulp.task('sassDev', function(){
 
 // HTML Tasks - tasks related to html
 gulp.task('html', function(){
-  gulp.src('./')
+  gulp.src('./app/')
   .pipe(reload({stream: true}));
 });
 
@@ -98,6 +98,7 @@ gulp.task('build:serve', function(){
 // watch files and folders for changes
 gulp.task('watch', function(){
   gulp.watch('app/js/**/*.js', ['scripts']);
+  gulp.watch('./app/**/*.html', ['html']);
   gulp.watch('app/sass/**/*.scss', ['sassDev']);
   gulp.watch('app/sass/**/*.scss', ['sassDep']);
 });
