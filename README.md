@@ -33,3 +33,4 @@ Basic knowledge of Git and Github, CSS, SASS, Gulp, and the command terminal are
 [Ruby Installer](http://rubyinstaller.org/)  
 [Node Installer](https://nodejs.org/en/)  
 [Travis Tutorial](https://www.youtube.com/watch?v=8ItNE_DX6Cc&t=18s)  
+[Joel Longie Tutorial](https://www.youtube.com/watch?v=jgcfEhiCkG4&list=PLv1YUP7gO_viROuRcGsDCNM-FUVgMYb_G&index=3)  
