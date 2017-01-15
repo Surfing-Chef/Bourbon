@@ -57,17 +57,29 @@ gulp.task('browser-sync', function(){
 });
 
 // DEPLOYMENT TASKS
-// clear out all files and folders form build folder
+// clear out all files and folders from build folder
 gulp.task('build:cleanfolder', function(){
   del([
-    'build/**'
+    'build/**/*.*'
   ]);
 });
+
 // create build directory for all files
-gulp.task('build:copy', function(){
+gulp.task('build:copy', ['build:cleanfolder'], function(){
   return gulp.src('app/**/*/')
-  .pipe(gulp.dest('build'));
+  .pipe(gulp.dest('build/'));
 });
+
+// remove unwanted build files and directories
+gulp.task('build:remove', ['build:copy'], function(cb){
+  del([  // list files and directories to delete
+    'build/sass',
+    'build/css/*dev*'
+  ], cb);
+});
+
+// main build task
+gulp.task('build', ['build:copy', 'build:remove']);
 
 // Watch Task - watch files and folders for changes
 gulp.task('watch', function(){
