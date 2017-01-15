@@ -1,3 +1,14 @@
+/*! home.scss */
 body {
   background: lightgrey;
+}
+
+.box {
+  background: green;
+  @include size(100px);
+  @include position(absolute, 100px auto auto 200px);
+  margin: 10px;
+}
+p {
+  font-family: $font-stack-monospace;
 }
