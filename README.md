@@ -23,14 +23,14 @@ Basic knowledge of Git and Github, CSS, SASS, Gulp, and the command terminal are
 1.0.1 - Basic HTML and SCSS  
 1.1.0 - Installed Bourbon components  
 1.1.1 - Created and imported master directories  
-<<<<<<< HEAD
-1.2.0 - Installed Gulp into project
-=======
-1.2.0 - Installed Gulp into project 
+1.2.0 - Installed Gulp into project  
 1.2.1 - Installed the Gulp packages into project directory via package.json  
 1.2.2 - Set up a gulpfile.js  
 1.2.3 - Configured gulp tasks   
-1.2.4 - Added build tasks to gulpfile.js
+1.2.4 - Added build tasks to gulpfile.js  
+1.2.5 - Added build:serve test task to gulpfile.js  
+1.2.6 - Added sourcemap to gulp gulpfile.js  
+
 
 #### References
 [Bourbon](http://bourbon.io/)  
