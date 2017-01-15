@@ -13,10 +13,12 @@ Basic knowledge of Git and Github, CSS, SASS, Gulp, and the command terminal are
 2. [Create a Bourbon Project](https://github.com/Surfing-Chef/Bourbon/wiki/Create-a-Bourbon-Project) is created
 3. Running the following command in your terminal, from within the ***app*** directory, will start Sass watching the ***sass*** folder for changes to the ***style.scss*** file and automatically write them to the ***style.css*** file in the **css** folder: `sass --watch sass/style.scss:css/style.css`. Only edit the style.scss file at this point to test, not the style.css.
 4. The Bourbon-Chef build system also requires that [Node.js](https://nodejs.org/en/), more specifically NPM (node package manager)is installed on your machine to load packages for Gulp.  Ensure the [latest version](https://github.com/Surfing-Chef/Bourbon/wiki/Latest-Node.js-and-Gulp) is installed on your machine.   
-5. Once Gulp is installed globally, set up a ***[package.json](https://github.com/Surfing-Chef/Bourbon/wiki/package.json)*** and install Gulp into your project
+5. Once Gulp is installed globally, set up a ***[package.json](https://github.com/Surfing-Chef/Bourbon/wiki/package.json)*** and install Gulp into your project.
 6. Install the gulp packages into project directory, automatically entered as *devDependencies* in ***package.json***: `>npm install gulp-plumber gulp-uglify gulp-rename gulp-autoprefixer del gulp-browser-sync gulp-sass --save-dev`  
 7. Setup ***[gulpfile.js](https://github.com/Surfing-Chef/Bourbon/wiki/The-gulpfile.js)*** to automate build tasks.
 8. After testing SCSS changes and browserSync, create build tasks in ***gulpfile.js*** to create a deployment package called **build**.  
+9. Create a deployment package using `gulp build` in the projects root directory using the command line.  Then check the package is ready for deplyment using `gulp build:serve`.
+10. The ***_home.scss*** file in ***app/sass/3-layouts/*** contains a very basic body style to test if everything is functioning.  The ***layouts*** folder is where all new layout scss should be stored and imported into the ***_dir-layouts.scss***.
 
 #### Version Control
 1.0.0 - Basic project structure   
