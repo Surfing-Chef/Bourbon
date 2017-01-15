@@ -16,6 +16,7 @@ Basic knowledge of Git and Github, CSS, SASS, Gulp, and the command terminal are
 5. Once Gulp is installed globally, set up a ***[package.json](https://github.com/Surfing-Chef/Bourbon/wiki/package.json)*** and install Gulp into your project
 6. Install the gulp packages into project directory, automatically entered as *devDependencies* in ***package.json***: `>npm install gulp-plumber gulp-uglify gulp-rename gulp-autoprefixer del gulp-browser-sync --save-dev`  
 7. Setup ***[gulpfile.js](https://github.com/Surfing-Chef/Bourbon/wiki/The-gulpfile.js)*** to automate build tasks.
+8. After testing SCSS changes and browserSync, create build tasks in ***gulpfile.js*** to create a deployment package called **build**.  
 
 #### Version Control
 1.0.0 - Basic project structure   
@@ -25,7 +26,8 @@ Basic knowledge of Git and Github, CSS, SASS, Gulp, and the command terminal are
 1.2.0 - Installed Gulp into project 
 1.2.1 - Installed the Gulp packages into project directory via package.json  
 1.2.2 - Set up a gulpfile.js  
-1.2.3 - Configured gulp tasks  
+1.2.3 - Configured gulp tasks 
+1.2.4 - Added build tasks to gulpfile.js
 
 #### References
 [Bourbon](http://bourbon.io/)  
