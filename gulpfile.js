@@ -9,7 +9,7 @@ var gulp = require('gulp'),
     del  = require('del'),
     rename = require('gulp-rename');
 
-// NAMED TASKS
+// DEVELOPMENT TASKS
 // Scripts Task - tasks related to js
 gulp.task('scripts', function(){
   gulp.src(['app/js/**/*.js', '!app/js/**/*.min.js'])
@@ -21,13 +21,24 @@ gulp.task('scripts', function(){
 });
 
 // Sass Tasks - tasks related to sc scss and css
-gulp.task('sass', function(){
+// deployment css - compressed
+gulp.task('sassDep', function(){
   gulp.src('app/sass/**/*.scss')
   .pipe(plumber())
-  .pipe(sass({outputStyle: 'expanded'}))
+  .pipe(sass({outputStyle: 'compressed'}))
   .pipe(autoprefixer('last 2 versions'))
   .pipe(gulp.dest('app/css/'))
   .pipe(reload({stream: true}));
+});
+
+// development css - nested
+gulp.task('sassDev', function(){
+  gulp.src('app/sass/**/*.scss')
+  .pipe(plumber())
+  .pipe(rename({suffix:'.dev'}))
+  .pipe(sass({outputStyle: 'nested'}))
+  .pipe(autoprefixer('last 2 versions'))
+  .pipe(gulp.dest('app/css/'));
 });
 
 // HTML Tasks - tasks related to html
@@ -45,11 +56,25 @@ gulp.task('browser-sync', function(){
   });
 });
 
+// DEPLOYMENT TASKS
+// clear out all files and folders form build folder
+gulp.task('build:cleanfolder', function(){
+  del([
+    'build/**'
+  ]);
+});
+// create build directory for all files
+gulp.task('build:copy', function(){
+  return gulp.src('**/*/')
+  .pipe(gulp.dest('build'));
+});
+
 // Watch Task - watch files and folders for changes
 gulp.task('watch', function(){
   gulp.watch('app/js/**/*.js', ['scripts']);
-  gulp.watch('app/sass/**/*.scss', ['sass']);
+  gulp.watch('app/sass/**/*.scss', ['sassDev']);
+  gulp.watch('app/sass/**/*.scss', ['sassDep']);
 });
 
 // Default Task - runs specified tasks asynchronously
-gulp.task('default', ['scripts', 'sass', 'html', 'browser-sync', 'watch']);
+gulp.task('default', ['scripts', 'sassDev', 'sassDep', 'html', 'browser-sync', 'watch']);
