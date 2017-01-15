@@ -11,20 +11,17 @@ Basic knowledge of Git and Github, CSS, SASS, Gulp, and the command terminal are
 
 1. Bourbon-Chef requires that [Ruby](http://rubyinstaller.org/) is installed on your machine.  Setup [Ruby, Sass and Bourbon](https://github.com/Surfing-Chef/Bourbon/wiki/Ruby-and-Bourbon).
 2. [Create a Bourbon Project](https://github.com/Surfing-Chef/Bourbon/wiki/Create-a-Bourbon-Project) is created
-3. Running the following command in your terminal, from within the sass directory, will start Sass watching the ***sass*** folder for changes to the ***style.scss*** file and automatically write them to the ***style.css*** file in the **css** folder: 
-```console
->sass--watch style.scss:css/style.css
-```  
-
-~~Bourbon-Chef also requires that [Node.js](https://nodejs.org/en/), more specifically NPM (node package manager)is installed on your machine to load packages for Gulp - ensure the [latest version](https://github.com/Surfing-Chef/Bourbon/wiki/Latest-Node.js-and-Gulp) is installed on your machine.~~   
-~~Once Gulp is installed globally, set up a [package.json](https://github.com/Surfing-Chef/Bourbon/wiki/package.json) and install Gulp into your project~~
+3. Running the following command in your terminal, from within the ***app*** directory, will start Sass watching the ***sass*** folder for changes to the ***style.scss*** file and automatically write them to the ***style.css*** file in the **css** folder: `sass --watch sass/style.scss:css/style.css`. Only edit the style.scss file at this point to test, not the style.css.
+4. The Bourbon-Chef build system also requires that [Node.js](https://nodejs.org/en/), more specifically NPM (node package manager)is installed on your machine to load packages for Gulp.  Ensure the [latest version](https://github.com/Surfing-Chef/Bourbon/wiki/Latest-Node.js-and-Gulp) is installed on your machine.   
+5. Once Gulp is installed globally, set up a [package.json](https://github.com/Surfing-Chef/Bourbon/wiki/package.json) and install Gulp into your project
 
 
 #### Version Control
 1.0.0 - Basic project structure   
 1.0.1 - Basic HTML and SCSS  
 1.1.0 - Installed Bourbon components  
-1.1.1 Created and imported master directories  
+1.1.1 - Created and imported master directories
+1.2.0 - Installed Gulp into project
 
 #### References
 [Bourbon](http://bourbon.io/)  
