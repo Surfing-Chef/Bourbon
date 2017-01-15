@@ -3,12 +3,17 @@ body {
   background: lightgrey;
 }
 
+.boxes {
+  @include clearfix;
+  @include outer-container;
+}
 .box {
-  background: green;
-  @include size(100px);
-  @include position(absolute, 100px auto auto 200px);
-  margin: 10px;
+  background: tint(green, 50%);
+  @include size(90px);
+  float: left;
+  @include span-columns(3);
 }
 p {
-  font-family: $font-stack-monospace;
+  font-family: $helvetica;
+  @include outer-container;
 }
