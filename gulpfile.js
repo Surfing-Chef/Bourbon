@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     reload = browserSync.reload,
     plumber = require('gulp-plumber'),
     autoprefixer = require('gulp-autoprefixer'),
+    sourcemaps  = require('gulp-sourcemaps'),
     del  = require('del'),
     rename = require('gulp-rename');
 
@@ -25,8 +26,10 @@ gulp.task('scripts', function(){
 gulp.task('sassDep', function(){
   gulp.src('app/sass/**/*.scss')
   .pipe(plumber())
+  .pipe(sourcemaps.init())
   .pipe(sass({outputStyle: 'compressed'}))
   .pipe(autoprefixer('last 2 versions'))
+  .pipe(sourcemaps.write('.'))
   .pipe(gulp.dest('app/css/'))
   .pipe(reload({stream: true}));
 });
