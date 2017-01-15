@@ -616,3 +616,6 @@ hr {
   border-right: 0;
   border-top: 0;
   margin: 1.5em 0; }
+
+body {
+  background: lightgrey; }
