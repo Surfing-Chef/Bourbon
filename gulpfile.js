@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     autoprefixer = require('gulp-autoprefixer'),
     del  = require('del'),
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'); 
 
 // NAMED TASKS
 // Scripts Task - tasks related to js
