@@ -1,4 +1,4 @@
-// REQUIRED
+// REQUIREMENTS
 var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
@@ -81,12 +81,23 @@ gulp.task('build:remove', ['build:copy'], function(cb){
 // main build task
 gulp.task('build', ['build:copy', 'build:remove']);
 
-// Watch Task - watch files and folders for changes
+// test deployment package
+gulp.task('build:serve', function(){
+  browserSync({
+    server:{
+      baseDir: './build/'
+    }
+  });
+});
+
+// WATCH TASKS
+// watch files and folders for changes
 gulp.task('watch', function(){
   gulp.watch('app/js/**/*.js', ['scripts']);
   gulp.watch('app/sass/**/*.scss', ['sassDev']);
   gulp.watch('app/sass/**/*.scss', ['sassDep']);
 });
 
-// Default Task - runs specified tasks asynchronously
+// DEFAULT TASKS
+// run specified tasks asynchronously
 gulp.task('default', ['scripts', 'sassDev', 'sassDep', 'html', 'browser-sync', 'watch']);
