@@ -1,19 +1,1 @@
 /*! home.scss */
-body {
-  background: lightgrey;
-}
-
-.boxes {
-  @include clearfix;
-  @include outer-container;
-}
-.box {
-  background: tint(green, 50%);
-  @include size(90px);
-  float: left;
-  @include span-columns(3);
-}
-p {
-  font-family: $helvetica;
-  @include outer-container;
-}
