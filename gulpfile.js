@@ -12,15 +12,6 @@ var gulp = require('gulp'),
     rename = require('gulp-rename');
 
 // DEVELOPMENT TASKS
-// Scripts Task - tasks related to js
-// gulp.task('scripts', function(){
-//   gulp.src(['app/js/**/*.js', '!app/js/**/*.min.js'])
-//   .pipe(plumber())
-//   .pipe(rename({suffix:'.min'}))
-//   .pipe(uglify())
-//   .pipe(gulp.dest('app/js'))
-//   .pipe(reload({stream: true}));
-// });
 gulp.task('scripts', function(){
   gulp.src(['app/js/**/*.js', '!app/js/**/script.js'])
   .pipe(plumber())
