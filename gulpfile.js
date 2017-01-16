@@ -7,19 +7,30 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     autoprefixer = require('gulp-autoprefixer'),
     sourcemaps  = require('gulp-sourcemaps'),
+    concat  = require('gulp-concat'),
     del  = require('del'),
     rename = require('gulp-rename');
 
 // DEVELOPMENT TASKS
 // Scripts Task - tasks related to js
+// gulp.task('scripts', function(){
+//   gulp.src(['app/js/**/*.js', '!app/js/**/*.min.js'])
+//   .pipe(plumber())
+//   .pipe(rename({suffix:'.min'}))
+//   .pipe(uglify())
+//   .pipe(gulp.dest('app/js'))
+//   .pipe(reload({stream: true}));
+// });
 gulp.task('scripts', function(){
-  gulp.src(['app/js/**/*.js', '!app/js/**/*.min.js'])
+  gulp.src(['app/js/**/*.js', '!app/js/**/script.js'])
   .pipe(plumber())
-  .pipe(rename({suffix:'.min'}))
+  .pipe(concat('script.js'))
+  .pipe(gulp.dest('app/js'))
   .pipe(uglify())
   .pipe(gulp.dest('app/js'))
   .pipe(reload({stream: true}));
 });
+
 
 // Sass Tasks - tasks related to sc scss and css
 // deployment css - compressed
