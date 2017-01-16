@@ -80,7 +80,9 @@ gulp.task('build:remove', ['build:copy'], function(cb){
   del([  // list files and directories to delete
     'build/sass',
     'build/css/*dev*',
-    'build/css/*.map'
+    'build/css/*.map',
+    'build/js/*.js',
+    '!build/js/script.js'
   ], cb);
 });
 
