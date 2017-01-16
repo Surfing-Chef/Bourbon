@@ -1,1 +1,1 @@
-console.log('script.js exists');
+console.log("test.js exists");
