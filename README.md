@@ -32,6 +32,7 @@ Basic knowledge of Git and Github, CSS, SASS, Gulp, and the command terminal are
 1.2.4 - Added build tasks to gulpfile.js  
 1.2.5 - Added build:serve test task to gulpfile.js  
 1.2.6 - Added sourcemap to gulp gulpfile.js  
+1.2.7 - Changed to compressed normalize   
 ##### Upcoming
 1.3.0 - will add image compression  
 
