@@ -1,5 +1,7 @@
 $( document ).ready(function() {
     console.log( "loaded" );
 
-    $(window).stellar();
+    $(function(){
+      $('.main').stellar();
+     });
   });
