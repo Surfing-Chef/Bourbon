@@ -4,10 +4,11 @@ body {
   header{
     position: relative;
     background-color: #000000;
-    background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    background-image: url("../images/3px-tile.png");
+    //background-size: contain;
     background-attachment: fixed;
     height: 100vh;
+
     nav {
       background: blue;
       height: 50px;
@@ -15,15 +16,25 @@ body {
       position: fixed;
       z-index: 1;
     }
-    section {
-      background-color: #ddd;
-      height: 50vh;
+
+    .callout {
+      @include outer-container(100%);
+
+      .block {
+        @include span-columns(4);
+        @include shift(4);
+        height: 200px;
+        background-color: red;
+        position: absolute;
+        top: 50%;
+        margin-top: -75px;
+      }
     }
   }
   main {
     background-color: #555;
     background-color: #120202;
-background-image: url("https://www.transparenttextures.com/patterns/ice-age.png");
+  background-image: url("https://www.transparenttextures.com/patterns/ice-age.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     background-attachment: fixed;
     height: 100vh;
