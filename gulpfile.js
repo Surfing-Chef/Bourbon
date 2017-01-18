@@ -13,7 +13,10 @@ var gulp = require('gulp'),
 
 // DEVELOPMENT TASKS
 gulp.task('scripts', function(){
-  gulp.src(['app/js/**/*.js', '!app/js/**/script.js'])
+  gulp.src([
+    'app/js/**/*.js', '!app/js/**/script.js',
+    '!app/js/**/*.min.js'
+  ])
   .pipe(plumber())
   .pipe(concat('script.js'))
   .pipe(gulp.dest('app/js'))
