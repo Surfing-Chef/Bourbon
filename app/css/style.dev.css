@@ -358,4 +358,35 @@ html {
 
 /*! home.scss */
 body {
-  background: #333; }
+  background: #ddd; }
+  body header {
+    position: relative;
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    background-attachment: fixed;
+    height: 100vh; }
+    body header nav {
+      background: blue;
+      height: 50px;
+      width: 100vw;
+      position: fixed;
+      z-index: 1; }
+    body header section {
+      background-color: #ddd;
+      height: 50vh; }
+  body main {
+    background-color: #555;
+    background-color: #120202;
+    background-image: url("https://www.transparenttextures.com/patterns/ice-age.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    background-attachment: fixed;
+    height: 100vh; }
+    body main section {
+      background: blue;
+      height: 200px;
+      width: 100vw; }
+  body footer section {
+    background: purple;
+    height: 500px;
+    width: 100vw; }
