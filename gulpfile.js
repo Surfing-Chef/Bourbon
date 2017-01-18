@@ -85,6 +85,7 @@ gulp.task('build:remove', ['build:copy'], function(cb){
     'build/css/*dev*',
     'build/css/*.map',
     'build/js/*.js',
+    '!build/js/*.min.js',
     '!build/js/script.js'
   ], cb);
 });
