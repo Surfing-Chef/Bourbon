@@ -1,1 +1,5 @@
-console.log('script.js exists');
+$( document ).ready(function() {
+    console.log( "loaded" );
+
+    $(window).stellar();
+  });
