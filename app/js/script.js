@@ -1,7 +1,1 @@
-$( document ).ready(function() {
-    console.log( "loaded" );
-
-    $(function(){
-      $('.main').stellar();
-     });
-  });
+$(window).scroll(function(){$(this).scrollTop();console.log(wScroll),$(".callout").css({transform:"translate(0px, "+wScroll/2+"%)"})});
