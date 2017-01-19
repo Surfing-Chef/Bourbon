@@ -361,37 +361,19 @@ body {
   background: #ddd; }
   body header {
     position: relative;
-    background-color: #000000;
-    background-image: url("../images/3px-tile.png");
-    background-attachment: fixed;
-    height: 100vh; }
-    body header nav {
-      background: blue;
-      height: 50px;
-      width: 100vw;
-      position: fixed;
-      z-index: 1; }
-    body header .callout {
-      max-width: 100%;
-      margin-left: auto;
-      margin-right: auto; }
-      body header .callout::after {
-        clear: both;
-        content: "";
-        display: block; }
-      body header .callout .block {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 31.76157%;
-        margin-left: 34.11922%;
-        height: 200px;
-        background-color: red;
-        position: absolute;
-        top: 50%;
-        margin-top: -75px; }
-        body header .callout .block:last-child {
-          margin-right: 0; }
+    background-color: #grey;
+    height: 700px; }
+  body .logo {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -70px; }
+    body .logo h1 {
+      text-align: center;
+      font-size: 50px;
+      padding-top: 20px;
+      color: #000; }
   body main {
     background-color: #555;
     background-color: #120202;

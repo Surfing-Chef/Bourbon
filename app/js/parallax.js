@@ -1,9 +1,11 @@
 $(window).scroll(function(){
-  var sScroll = $(this).scrollTop();
+  var wScroll = $(this).scrollTop();
   console.log(wScroll);
 
   // background scroll
-  $('.callout').css({
+
+  $('.logo').css({
     'transform' : 'translate(0px, '+ wScroll /2 +'%)'
   });
+  
 });

@@ -1,36 +1,28 @@
 /*! home.scss */
 body {
   background: $light-gray;
-  header{
+
+  header {
     position: relative;
-    background-color: #000000;
-    background-image: url("../images/3px-tile.png");
-    //background-size: contain;
-    background-attachment: fixed;
-    height: 100vh;
+    background-color: grey;
+    height: 700px;
+  }
 
-    nav {
-      background: blue;
-      height: 50px;
-      width: 100vw;
-      position: fixed;
-      z-index: 1;
-    }
-
-    .callout {
-      @include outer-container(100%);
-
-      .block {
-        @include span-columns(4);
-        @include shift(4);
-        height: 200px;
-        background-color: red;
-        position: absolute;
-        top: 50%;
-        margin-top: -75px;
+    .logo {
+    height: 100px;
+    width: 100%;
+    //background-color: grey;
+    position: absolute;
+    top: 50%;
+    margin-top: -70px;
+      h1{
+        text-align: center;
+        font-size: 50px;
+        padding-top: 20px;
+        color: #000;
       }
     }
-  }
+
   main {
     background-color: #555;
     background-color: #120202;

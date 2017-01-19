@@ -1,1 +1,1 @@
-$(window).scroll(function(){$(this).scrollTop();console.log(wScroll),$(".callout").css({transform:"translate(0px, "+wScroll/2+"%)"})});
+$(window).scroll(function(){var o=$(this).scrollTop();console.log(o),$(".logo").css({transform:"translate(0px, "+o/2+"%)"})});
