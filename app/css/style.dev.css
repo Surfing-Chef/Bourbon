@@ -361,20 +361,19 @@ body {
   background: #ddd; }
   body header {
     position: relative;
-    background-color: #000000;
-    background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    background-attachment: fixed;
-    height: 100vh; }
-    body header nav {
-      background: blue;
-      height: 50px;
-      width: 100vw;
-      position: fixed;
-      z-index: 1; }
-    body header section {
-      background-color: #ddd;
-      height: 50vh; }
+    background-color: #grey;
+    height: 700px; }
+  body .logo {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -70px; }
+    body .logo h1 {
+      text-align: center;
+      font-size: 50px;
+      padding-top: 20px;
+      color: #000; }
   body main {
     background-color: #555;
     background-color: #120202;
