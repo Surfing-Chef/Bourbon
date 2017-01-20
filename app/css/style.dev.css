@@ -361,7 +361,7 @@ body {
   background: #ddd; }
   body header {
     position: relative;
-    background-color: #grey;
+    background-color: grey;
     height: 700px; }
   body .logo {
     height: 100px;
