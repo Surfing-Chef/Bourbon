@@ -1,11 +1,13 @@
 $(window).scroll(function(){
   var wScroll = $(this).scrollTop();
-  console.log(wScroll);
+  var wPort = $(this).width();
+  var hPort = $(this).height();
+  console.log(wPort + ' x ' + hPort);
 
-  // background scroll
+  // background scroll 
 
   $('.logo').css({
     'transform' : 'translate(0px, '+ wScroll /2 +'%)'
   });
-  
+
 });
