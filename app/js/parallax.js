@@ -4,10 +4,10 @@ $(window).scroll(function(){
   var hPort = $(this).height();
   console.log(wPort + ' x ' + hPort);
 
-  // background scroll 
+  // background scroll
 
-  $('.logo').css({
-    'transform' : 'translate(0px, '+ wScroll /2 +'%)'
-  });
+  // $('.logo').css({
+  //   'transform' : 'translate(0px, '+ wScroll /2 +'%)'
+  // });
 
 });
