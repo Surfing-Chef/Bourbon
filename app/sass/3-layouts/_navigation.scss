@@ -3,11 +3,11 @@
   $base-border-radius: 3px !default;
   $dark-gray: #333 !default;
   $large-screen: 53.75em !default;
-  $base-font-color: #ddd;
+  $base-font-color: $light-gray;
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 2em;
   $centered-navigation-background: #E7F1EC;
-  $centered-navigation-color: transparentize($base-font-color, 0.1  );
+  $centered-navigation-color:$light-gray;
   $centered-navigation-color-hover: $base-font-color;
   $centered-navigation-height: 60px;
   $centered-navigation-item-padding: 1em;
@@ -17,8 +17,6 @@
   $horizontal-bar-mode: $large-screen;
 
 
-  background-color: $centered-navigation-background;
-  border-bottom: 1px solid darken($centered-navigation-background, 6%);
   min-height: $centered-navigation-height;
   width: 100%;
   z-index: 9999;
@@ -65,7 +63,6 @@
   // Nav menu
 
   .centered-navigation-wrapper {
-    //@include outer-container;
     @include clearfix;
     position: relative;
     z-index: 999;
@@ -101,7 +98,7 @@
   }
 
   ul li.nav-link {
-    background: $centered-navigation-background;
+    //background: $centered-navigation-background;
     display: block;
     line-height: $centered-navigation-height;
     overflow: hidden;
