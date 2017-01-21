@@ -1,4 +1,4 @@
-// REQUIREMENTS
+// REQUIRED
 var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
@@ -14,14 +14,23 @@ var gulp = require('gulp'),
 // DEVELOPMENT TASKS
 // Scripts Task - tasks related to js
 gulp.task('scripts', function(){
-  gulp.src(['app/js/**/*.js', '!app/js/**/*.min.js'])
+  gulp.src(['app/js/**/*.js', '!app/js/**/script.js'])
   .pipe(plumber())
   .pipe(concat('script.js'))
-  .pipe(rename({suffix:'.min'}))
+  .pipe(gulp.dest('app/js'))
   .pipe(uglify())
   .pipe(gulp.dest('app/js'))
   .pipe(reload({stream: true}));
 });
+// gulp.task('scripts', function(){
+//   gulp.src(['app/js/**/*.js', '!app/js/**/*.min.js', '!app/js/**/source.js'])
+//   .pipe(plumber())
+//   .pipe(concat('script.js'))
+//   .pipe(rename({suffix:'.min'}))
+//   .pipe(uglify())
+//   .pipe(gulp.dest('app/js'))
+//   .pipe(reload({stream: true}));
+// });
 
 // Sass Tasks - tasks related to sc scss and css
 // deployment css - compressed
