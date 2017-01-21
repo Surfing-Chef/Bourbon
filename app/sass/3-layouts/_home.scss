@@ -13,8 +13,11 @@ body {
   }
 
   main {
-    section{
-      
+    section {
+      @include outer-container;
+      p {
+        @include span-columns(3 of 12);
+      }
     }
   } // main
 
