@@ -4,46 +4,21 @@ body {
 
   header {
     position: relative;
-    background-color: grey;
-    height: 700px;
-  }
-
-    .logo {
-    height: 100px;
     width: 100%;
-    //background-color: grey;
-    position: absolute;
-    top: 50%;
-    margin-top: -70px;
-      h1{
-        text-align: center;
-        font-size: 50px;
-        padding-top: 20px;
-        color: #000;
-      }
-    }
+    height: 100vh;
+    background: url('../../images/LondonRidgeSouthSideDarker.jpg')fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow-x: hidden;
+  }
 
   main {
-    background-color: #555;
-    background-color: #120202;
-  background-image: url("https://www.transparenttextures.com/patterns/ice-age.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    background-attachment: fixed;
-    height: 100vh;
 
-    section{
-      background: blue;
-      height: 200px;
-      width: 100vw;
-    }
-  }
+  } // main
 
   footer {
     section{
-      background: purple;
-      height: 500px;
-      width: 100vw;
-    }
-  }
 
-}
+    } // footer section
+  } // footer
+} // body
