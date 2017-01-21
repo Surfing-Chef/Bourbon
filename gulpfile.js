@@ -28,8 +28,10 @@ gulp.task('scripts', function(){
 gulp.task('sassDep', function(){
   gulp.src('app/sass/**/*.scss')
   .pipe(plumber())
-  .pipe(sass({outputStyle: 'compressed'}))
-  .pipe(autoprefixer('last 2 versions'))
+  .pipe(sourcemaps.init())
+    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(autoprefixer('last 2 versions'))
+  .pipe(sourcemaps.write())
   .pipe(gulp.dest('app/css/'))
   .pipe(reload({stream: true}));
 });
