@@ -1,4 +1,4 @@
-// REQUIRED
+// REQUIREMENTS
 var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
@@ -6,6 +6,8 @@ var gulp = require('gulp'),
     reload = browserSync.reload,
     plumber = require('gulp-plumber'),
     autoprefixer = require('gulp-autoprefixer'),
+    sourcemaps  = require('gulp-sourcemaps'),
+    concat  = require('gulp-concat'),
     del  = require('del'),
     rename = require('gulp-rename');
 
@@ -14,6 +16,7 @@ var gulp = require('gulp'),
 gulp.task('scripts', function(){
   gulp.src(['app/js/**/*.js', '!app/js/**/*.min.js'])
   .pipe(plumber())
+  .pipe(concat('script.js'))
   .pipe(rename({suffix:'.min'}))
   .pipe(uglify())
   .pipe(gulp.dest('app/js'))
