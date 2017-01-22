@@ -630,10 +630,10 @@ article.type-system-geometric {
 
 /*! 3-layouts */
 /*! home.scss */
-body {
+.home {
   background: #ddd;
   overflow-x: hidden; }
-  body header {
+  .home header {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -641,33 +641,10 @@ body {
     background-size: cover;
     background-position: 50% 50%;
     overflow-x: hidden; }
-  body main {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px; }
-    body main::after {
-      clear: both;
-      content: "";
-      display: block; }
-    body main section {
-      padding: 10px 0 20px; }
-      body main section::after {
-        clear: both;
-        content: "";
-        display: block; }
-      body main section p {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 23.23176%; }
-        body main section p:last-child {
-          margin-right: 0; }
-
-/* -- jInvertScroll ---------------------*/
-/** hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
-/** important: keep position fixed, you can however use top:0 instead of bottom:0 if you want to make it stick to the top of the browser */
-.scroll {
-  position: fixed;
-  bottom: 0;
-  left: 0; }
+  .home main div article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .home main div article:last-child {
+      margin-right: 0; }
