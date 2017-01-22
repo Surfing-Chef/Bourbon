@@ -631,7 +631,8 @@ article.type-system-geometric {
 /*! 3-layouts */
 /*! home.scss */
 body {
-  background: #ddd; }
+  background: #ddd;
+  overflow-x: hidden; }
   body header {
     position: relative;
     width: 100%;
@@ -662,3 +663,11 @@ body {
         width: 23.23176%; }
         body main section p:last-child {
           margin-right: 0; }
+
+/* -- jInvertScroll ---------------------*/
+/** hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
+/** important: keep position fixed, you can however use top:0 instead of bottom:0 if you want to make it stick to the top of the browser */
+.scroll {
+  position: fixed;
+  bottom: 0;
+  left: 0; }
