@@ -14,9 +14,9 @@ var gulp = require('gulp'),
 // DEVELOPMENT TASKS
 // Scripts Task - tasks related to js
 gulp.task('scripts', function(){
-  gulp.src(['app/js/**/*.js', '!app/js/**/script.js', '!app/js/**/*min.js'])
+  gulp.src(['app/js/**/*.js', '!app/js/**/*min.js'])
   .pipe(plumber())
-  .pipe(concat('script.js'))
+  .pipe(concat('script.min.js'))
   .pipe(gulp.dest('app/js'))
   .pipe(uglify())
   .pipe(gulp.dest('app/js'))
