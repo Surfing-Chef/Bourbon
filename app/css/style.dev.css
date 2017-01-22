@@ -357,35 +357,12 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-/*! home.scss */
-body {
-  background: #ddd; }
-  body header {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url("../../images/LondonRidgeSouthSideDarker.jpg") fixed;
-    background-size: cover;
-    background-position: 50% 50%;
-    overflow-x: hidden; }
-  body main section {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto; }
-    body main section::after {
-      clear: both;
-      content: "";
-      display: block; }
-    body main section p {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 23.23176%; }
-      body main section p:last-child {
-        margin-right: 0; }
-
+/*! 1-Base */
+/*! scVariables.scss */
+/*! 2-modules */
 /*! navigation.scss */
 .centered-navigation {
+  font-family: "Questrial", sans-serif;
   min-height: 60px;
   width: 100%;
   z-index: 9999; }
@@ -556,3 +533,132 @@ body {
             padding-left: 1em;
             text-align: left;
             width: 12em; } }
+
+article.type-system-geometric {
+  font-family: "Questrial", sans-serif;
+  text-align: left; }
+  article.type-system-geometric::after {
+    clear: both;
+    content: "";
+    display: block; }
+  article.type-system-geometric h1, article.type-system-geometric h2, article.type-system-geometric h3, article.type-system-geometric p {
+    margin: 0; }
+  article.type-system-geometric hr {
+    border-bottom: 1px solid #ddd;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    margin: 1.5em 0; }
+  article.type-system-geometric p {
+    color: #333;
+    line-height: 1.5; }
+  article.type-system-geometric a {
+    color: #1565c0;
+    text-decoration: none; }
+  article.type-system-geometric .type {
+    border-bottom: 1px solid;
+    display: inline-block;
+    font-family: "Questrial", sans-serif;
+    font-size: 0.7em;
+    font-weight: 800;
+    margin-bottom: 2em;
+    padding: 0.3em 0;
+    text-align: left;
+    text-transform: uppercase; }
+  article.type-system-geometric h1 {
+    font-family: "Sanchez", serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 0.5em; }
+    @media screen and (min-width: 600px) {
+      article.type-system-geometric h1 {
+        font-size: 2.6em; } }
+  article.type-system-geometric h2 {
+    font-family: "Sanchez", serif;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-bottom: 1.1em; }
+    @media screen and (min-width: 600px) {
+      article.type-system-geometric h2 {
+        font-size: 1.3em; } }
+  article.type-system-geometric code {
+    background: #F7F7F7;
+    border-radius: 4.5px;
+    border: 1px solid #E0E0E0;
+    font-size: 0.7em;
+    font-style: normal;
+    padding: 0.1em 0.4em;
+    white-space: nowrap; }
+  article.type-system-geometric h3 {
+    font-family: "Sanchez", serif;
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin-bottom: 0.4em; }
+  article.type-system-geometric p.date {
+    color: rgba(51, 51, 51, 0.4);
+    font-family: "Sanchez", serif;
+    font-size: 0.9em;
+    font-style: italic;
+    margin-bottom: 0.3em; }
+  article.type-system-geometric p {
+    font-family: "Questrial", sans-serif;
+    font-size: 1.05em;
+    line-height: 1.5em;
+    margin-bottom: 1.5em; }
+  article.type-system-geometric a.read-more {
+    display: inline-block;
+    font-family: "Questrial", sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-left: 0.2em;
+    position: relative;
+    text-transform: uppercase; }
+    article.type-system-geometric a.read-more span {
+      font-family: "Questrial", sans-serif;
+      font-size: 1.5em;
+      font-style: normal;
+      position: absolute;
+      right: -12px;
+      top: -1px; }
+  article.type-system-geometric hr {
+    width: 3em; }
+  article.type-system-geometric p.author {
+    font-family: "Questrial", sans-serif; }
+
+/*! 3-layouts */
+/*! home.scss */
+body {
+  background: #ddd; }
+  body header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("../../images/LondonRidgeSouthSideDarker.jpg") fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow-x: hidden; }
+  body main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px; }
+    body main::after {
+      clear: both;
+      content: "";
+      display: block; }
+    body main section {
+      padding: 10px 0 20px; }
+      body main section::after {
+        clear: both;
+        content: "";
+        display: block; }
+      body main section p {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 23.23176%; }
+        body main section p:last-child {
+          margin-right: 0; }
