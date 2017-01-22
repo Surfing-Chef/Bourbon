@@ -654,7 +654,7 @@ article.type-system-geometric {
   height: 100%;
   list-style: none; }
 
-.frame .slidee li {
+.frame .slidee article {
   float: left;
   margin: 0 5px 0 0;
   padding: 0;
