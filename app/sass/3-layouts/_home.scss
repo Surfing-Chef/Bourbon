@@ -13,8 +13,11 @@ body {
   }
 
   main {
+    @include outer-container;
+    padding: 20px;
     section {
-      @include outer-container;
+      @include clearfix;
+      padding: 10px 0 20px;
       p {
         @include span-columns(3 of 12);
       }
