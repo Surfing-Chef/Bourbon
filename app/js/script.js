@@ -1,23 +1,16 @@
-var test_sly = new Sly('#frame',
-        {
-            horizontal: 1,
-            itemNav: 'basic',
-            smart: 0,
-            activateMiddle: 1,
-            activatePageOn: 'mouseover',
-            mouseDragging: 1,
-            touchDragging: 1,
-            releaseSwing: 1,
-            startAt: 0,
-            scrollBar: $('#effects1').find('.scrollbar'),
-            scrollBy: 1,
-            speed: 300,
-            elasticBounds: 1,
-            easing: 'swing',
-            dragHandle: 1,
-            dynamicHandle: 1,
-            clickBar: 1,
-            activeClass: 'active'
-        });
+$('#scene').parallax({
+  calibrateX: false,
+  calibrateY: true,
+  invertX: false,
+  invertY: true,
+  limitX: false,
+  limitY: 10,
+  scalarX: 2,
+  scalarY: 8,
+  frictionX: 0.2,
+  frictionY: 0.8,
+  originX: 0.0,
+  originY: 1.0
+});
 
-    test_sly.init();
+$('#scene').parallax();
