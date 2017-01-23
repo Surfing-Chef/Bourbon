@@ -534,28 +534,28 @@ html {
             text-align: left;
             width: 12em; } }
 
-article.type-system-geometric {
+.type-system-geometric {
   font-family: "Questrial", sans-serif;
   text-align: left; }
-  article.type-system-geometric::after {
+  .type-system-geometric::after {
     clear: both;
     content: "";
     display: block; }
-  article.type-system-geometric h1, article.type-system-geometric h2, article.type-system-geometric h3, article.type-system-geometric p {
+  .type-system-geometric h1, .type-system-geometric h2, .type-system-geometric h3, .type-system-geometric p {
     margin: 0; }
-  article.type-system-geometric hr {
+  .type-system-geometric hr {
     border-bottom: 1px solid #ddd;
     border-left: 0;
     border-right: 0;
     border-top: 0;
     margin: 1.5em 0; }
-  article.type-system-geometric p {
+  .type-system-geometric p {
     color: #333;
     line-height: 1.5; }
-  article.type-system-geometric a {
+  .type-system-geometric a {
     color: #1565c0;
     text-decoration: none; }
-  article.type-system-geometric .type {
+  .type-system-geometric .type {
     border-bottom: 1px solid;
     display: inline-block;
     font-family: "Questrial", sans-serif;
@@ -565,15 +565,15 @@ article.type-system-geometric {
     padding: 0.3em 0;
     text-align: left;
     text-transform: uppercase; }
-  article.type-system-geometric h1 {
+  .type-system-geometric h1 {
     font-family: "Sanchez", serif;
     font-size: 1.8em;
     font-weight: 700;
     margin-bottom: 0.5em; }
     @media screen and (min-width: 600px) {
-      article.type-system-geometric h1 {
+      .type-system-geometric h1 {
         font-size: 2.6em; } }
-  article.type-system-geometric h2 {
+  .type-system-geometric h2 {
     font-family: "Sanchez", serif;
     font-size: 1.2em;
     font-style: italic;
@@ -581,9 +581,9 @@ article.type-system-geometric {
     line-height: 1.4em;
     margin-bottom: 1.1em; }
     @media screen and (min-width: 600px) {
-      article.type-system-geometric h2 {
+      .type-system-geometric h2 {
         font-size: 1.3em; } }
-  article.type-system-geometric code {
+  .type-system-geometric code {
     background: #F7F7F7;
     border-radius: 4.5px;
     border: 1px solid #E0E0E0;
@@ -591,24 +591,24 @@ article.type-system-geometric {
     font-style: normal;
     padding: 0.1em 0.4em;
     white-space: nowrap; }
-  article.type-system-geometric h3 {
+  .type-system-geometric h3 {
     font-family: "Sanchez", serif;
     font-size: 1.4em;
     font-weight: 400;
     line-height: 1.3em;
     margin-bottom: 0.4em; }
-  article.type-system-geometric p.date {
+  .type-system-geometric p.date {
     color: rgba(51, 51, 51, 0.4);
     font-family: "Sanchez", serif;
     font-size: 0.9em;
     font-style: italic;
     margin-bottom: 0.3em; }
-  article.type-system-geometric p {
+  .type-system-geometric p {
     font-family: "Questrial", sans-serif;
     font-size: 1.05em;
     line-height: 1.5em;
     margin-bottom: 1.5em; }
-  article.type-system-geometric a.read-more {
+  .type-system-geometric a.read-more {
     display: inline-block;
     font-family: "Questrial", sans-serif;
     font-size: 0.8em;
@@ -616,16 +616,16 @@ article.type-system-geometric {
     margin-left: 0.2em;
     position: relative;
     text-transform: uppercase; }
-    article.type-system-geometric a.read-more span {
+    .type-system-geometric a.read-more span {
       font-family: "Questrial", sans-serif;
       font-size: 1.5em;
       font-style: normal;
       position: absolute;
       right: -12px;
       top: -1px; }
-  article.type-system-geometric hr {
+  .type-system-geometric hr {
     width: 3em; }
-  article.type-system-geometric p.author {
+  .type-system-geometric p.author {
     font-family: "Questrial", sans-serif; }
 
 /*! 3-layouts */
@@ -641,22 +641,20 @@ article.type-system-geometric {
     background-size: cover;
     background-position: 50% 50%;
     overflow-x: hidden; }
-
-/*! Sly Perameters */
-.frame {
-  width: 100%;
-  height: 500px;
-  padding: 0; }
-
-.frame .slidee {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  list-style: none; }
-
-.frame .slidee article {
-  float: left;
-  margin: 0 5px 0 0;
-  padding: 0;
-  width: 635px;
-  height: 500px; }
+  .home main div {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; }
+    .home main div::after {
+      clear: both;
+      content: "";
+      display: block; }
+    .home main div div article {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin: 0;
+      padding: 2%; }
+      .home main div div article:last-child {
+        margin-right: 0; }
