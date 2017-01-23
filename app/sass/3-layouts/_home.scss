@@ -22,8 +22,6 @@
 
         article {
           @include span-columns(6);
-          margin: 0;
-          padding: 2%;
         }
       }
     }
