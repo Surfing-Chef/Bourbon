@@ -641,20 +641,19 @@ html {
     background-size: cover;
     background-position: 50% 50%;
     overflow-x: hidden; }
-  .home main div {
+  .home main {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto; }
-    .home main div::after {
+    .home main::after {
       clear: both;
       content: "";
       display: block; }
-    .home main div div article {
+    .home main article {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 48.82117%;
-      margin: 0;
-      padding: 2%; }
-      .home main div div article:last-child {
+      padding: 20px; }
+      .home main article:last-child {
         margin-right: 0; }
