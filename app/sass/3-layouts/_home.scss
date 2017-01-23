@@ -16,11 +16,14 @@
   main {
 
     div {
+      @include outer-container;
 
-      ul{
+      div {
 
-        li{
-
+        article {
+          @include span-columns(6);
+          margin: 0;
+          padding: 2%;
         }
       }
     }
@@ -32,22 +35,3 @@
     } // footer section
   } // footer
 } // body
-
-/*! Sly Perameters */
-.frame {
-  width: 100%;
-  height: 500px;
-  padding: 0;
-}
-.frame .slidee {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  list-style: none;
-}
-.frame .slidee article {
-  float: left;
-  margin: 0 5px 0 0;
-  padding: 0;
-  width: 635px;
-  height: 500px; }
