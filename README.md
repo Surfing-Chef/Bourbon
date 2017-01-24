@@ -3,8 +3,10 @@
 Content with sidebars  
 > Tags: parallax, side bars, hero landing, back to top button  
 
-Added Font Awesome availability using npm, and gulp  
+[Bootstrap Font Awesome CDN](https://www.bootstrapcdn.com/fontawesome/)  
+[Tut on back to top button](https://getflywheel.com/layout/add-sticky-back-top-button-website/)  
+[Bourbon](http://bourbon.io/docs/)   
+[SASS](http://sass-lang.com/libsass)  
 
-[thanks](http://stackoverflow.com/questions/21406538/how-to-use-font-awesome-icons-from-node-modules)  
 
 parallax footer and header
