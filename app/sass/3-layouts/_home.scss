@@ -16,6 +16,8 @@
     @include padding(2%);
     background: $light-gray;
     margin-bottom: 200px;
+    border-bottom: 1px solid shade(white, 70%);
+
     article {
       @include outer-container;
       @include padding(1em null null null);
@@ -34,7 +36,7 @@
       }
     }
   } // main
-
+  
   footer {
     position: fixed;
     width: 100%;
