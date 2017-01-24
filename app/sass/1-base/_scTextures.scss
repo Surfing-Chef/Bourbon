@@ -1,4 +1,4 @@
-@mixin texture($gradient-angle, $bg-color-1, $bg-color-2, $texture-number, $inverted) { $texture-list:
+@mixin texture(/*$gradient-angle, */$bg-color-1, $bg-color-2, $texture-number, $inverted) { $texture-list:
   "paper.png"             // Fabric and paper
   "rice_paper.png"
   "noise_lines.png"
@@ -90,13 +90,13 @@
 
   @if ($inverted == 1) {
     background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/#{nth($texture-list, $texture-number)}"),
-                linear-gradient($gradient-angle, $bg-color-1, $bg-color-2),
+                /*linear-gradient($gradient-angle, $bg-color-1, $bg-color-2),*/
                 center no-repeat $bg-color-1 scroll;
   }
 
   @else {
     background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/#{nth($texture-list, $texture-number)}"),
-                linear-gradient($gradient-angle, $bg-color-1, $bg-color-2),
-                center no-repeat $bg-color-1 scroll;
+                /*linear-gradient($gradient-angle, $bg-color-1, $bg-color-2),*/
+                center no-repeat $bg-color-2 scroll;
   }
 }
