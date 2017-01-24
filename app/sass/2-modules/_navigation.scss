@@ -7,9 +7,9 @@
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 2em;
   $centered-navigation-background: #E7F1EC;
-  $centered-navigation-color:$light-gray;
+  $centered-navigation-color: shade(white, 1%);
   $centered-navigation-color-hover: $base-font-color;
-  $centered-navigation-height: 60px;
+  $centered-navigation-height: 100px;
   $centered-navigation-item-padding: 1em;
   $centered-navigation-submenu-padding: 1em;
   $centered-navigation-submenu-width: 12em;
@@ -17,12 +17,15 @@
   $horizontal-bar-mode: $large-screen;
 
   font-family: $sans-serif;
+  font-size: 1.2em;
+  text-shadow: 1px 1px rgba(grey, 0.9);
   min-height: $centered-navigation-height;
   width: 100%;
   z-index: 9999;
-  $bg1: rgba(0,0,0,0.5);
-  $bg2: rgba(0,0,0,0.9);
-  background-color: transparentize($light-gray, 0.7);
+  $bg1: transparentize(black, 0.5);
+  $bg2: transparentize(white, 0.5);
+  @include texture($bg1, $bg2, 85, 2);
+
   // Mobile view
 
   .mobile-logo {
