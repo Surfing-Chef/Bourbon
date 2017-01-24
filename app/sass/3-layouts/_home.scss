@@ -41,7 +41,7 @@
     height: 200px;
     background-color: tint($medium-gray, 50%);
     bottom: 0;
-    @include padding(3% null null null);
+    @include padding(2.5% null null null);
     z-index: -1;
 
     section{
