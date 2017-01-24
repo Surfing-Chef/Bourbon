@@ -459,17 +459,17 @@ html {
   font-family: "Questrial", sans-serif;
   font-size: 1.2em;
   text-shadow: 1px 1px rgba(128, 128, 128, 0.9);
-  min-height: 100px;
+  min-height: 70px;
   width: 100%;
   z-index: 9999;
   background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/grey.png"), center no-repeat rgba(255, 255, 255, 0.5) scroll; }
   .centered-navigation .mobile-logo {
     display: inline;
     float: left;
-    max-height: 100px;
+    max-height: 70px;
     padding-left: 1em; }
     .centered-navigation .mobile-logo img {
-      max-height: 100px;
+      max-height: 70px;
       opacity: 0.6;
       padding: 0.8em 0; }
     @media screen and (min-width: 900px) {
@@ -479,7 +479,7 @@ html {
     color: #fcfcfc;
     display: block;
     float: right;
-    line-height: 100px;
+    line-height: 70px;
     margin: 0;
     padding-right: 1em;
     text-decoration: none;
@@ -492,7 +492,9 @@ html {
   .centered-navigation .centered-navigation-wrapper {
     position: relative;
     z-index: 999;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    height: 100px;
+    padding-top: 17.5px; }
     .centered-navigation .centered-navigation-wrapper::after {
       clear: both;
       content: "";
@@ -517,9 +519,9 @@ html {
       margin-left: 2.2em; } }
   .centered-navigation ul li.nav-link {
     display: block;
-    line-height: 100px;
+    line-height: 70px;
     overflow: hidden;
-    padding-right: 1em;
+    padding-right: 1.5em;
     text-align: right;
     width: 100%;
     z-index: 9999; }
@@ -534,7 +536,7 @@ html {
       .centered-navigation ul li.nav-link {
         background: transparent;
         display: inline;
-        line-height: 100px; }
+        line-height: 70px; }
         .centered-navigation ul li.nav-link a {
           padding-right: 1em; } }
   .centered-navigation li.logo.nav-link {
@@ -610,7 +612,7 @@ html {
       padding-right: 0; }
       @media screen and (min-width: 900px) {
         .centered-navigation ul.submenu li {
-          line-height: 76.92308px; }
+          line-height: 53.84615px; }
           .centered-navigation ul.submenu li:first-child > a {
             border-top-left-radius: 3px;
             border-top-right-radius: 3px; }
@@ -672,7 +674,7 @@ html {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 31.76157%; }
+      width: 23.23176%; }
       .home main article aside:last-child {
         margin-right: 0; }
 
@@ -699,15 +701,15 @@ html {
   background: none;
   margin: 0;
   position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 70px;
-  height: 70px;
+  bottom: 50vh;
+  right: 2%;
   z-index: 100;
   display: none;
   text-decoration: none;
-  color: #ffffff;
-  background-color: #ff9000; }
+  color: rgba(153, 153, 153, 0.7); }
 
 .home .back-to-top i {
-  font-size: 60px; }
+  font-size: 50px; }
+
+.test-fill {
+  background-color: rgba(255, 192, 203, 0.3); }
