@@ -1,7 +1,7 @@
 jQuery(document).ready(function() {
 
   // Back to Top Link
-  var offset = 250;
+  var offset = 100;
   var duration = 300;
 
   jQuery(window).scroll(function() {
