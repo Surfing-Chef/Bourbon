@@ -363,26 +363,29 @@ html {
 /*! navigation.scss */
 .centered-navigation {
   font-family: "Questrial", sans-serif;
-  min-height: 60px;
+  font-size: 1.2em;
+  text-shadow: 1px 1px rgba(128, 128, 128, 0.9);
+  min-height: 100px;
   width: 100%;
-  z-index: 9999; }
+  z-index: 9999;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/grey.png"), center no-repeat rgba(255, 255, 255, 0.5) scroll; }
   .centered-navigation .mobile-logo {
     display: inline;
     float: left;
-    max-height: 60px;
+    max-height: 100px;
     padding-left: 1em; }
     .centered-navigation .mobile-logo img {
-      max-height: 60px;
+      max-height: 100px;
       opacity: 0.6;
       padding: 0.8em 0; }
     @media screen and (min-width: 900px) {
       .centered-navigation .mobile-logo {
         display: none; } }
   .centered-navigation .centered-navigation-mobile-menu {
-    color: #ddd;
+    color: #fcfcfc;
     display: block;
     float: right;
-    line-height: 60px;
+    line-height: 100px;
     margin: 0;
     padding-right: 1em;
     text-decoration: none;
@@ -420,14 +423,14 @@ html {
       margin-left: 2.2em; } }
   .centered-navigation ul li.nav-link {
     display: block;
-    line-height: 60px;
+    line-height: 100px;
     overflow: hidden;
     padding-right: 1em;
     text-align: right;
     width: 100%;
     z-index: 9999; }
     .centered-navigation ul li.nav-link a {
-      color: #ddd;
+      color: #fcfcfc;
       display: inline-block;
       outline: none;
       text-decoration: none; }
@@ -437,7 +440,7 @@ html {
       .centered-navigation ul li.nav-link {
         background: transparent;
         display: inline;
-        line-height: 60px; }
+        line-height: 100px; }
         .centered-navigation ul li.nav-link a {
           padding-right: 1em; } }
   .centered-navigation li.logo.nav-link {
@@ -467,7 +470,7 @@ html {
       right: -0.4em;
       bottom: auto;
       left: auto;
-      color: #ddd;
+      color: #fcfcfc;
       content: "\25BE"; }
   .centered-navigation li.more {
     overflow: visible;
@@ -513,7 +516,7 @@ html {
       padding-right: 0; }
       @media screen and (min-width: 900px) {
         .centered-navigation ul.submenu li {
-          line-height: 46.15385px; }
+          line-height: 76.92308px; }
           .centered-navigation ul.submenu li:first-child > a {
             border-top-left-radius: 3px;
             border-top-right-radius: 3px; }
@@ -676,7 +679,9 @@ html {
   position: fixed;
   width: 100%;
   height: 200px;
-  background-color: #cccccc;
+  color: #999;
+  text-shadow: 1px 1px rgba(51, 51, 51, 0.6);
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/grey.png"), center no-repeat rgba(0, 0, 0, 0.7) scroll;
   bottom: 0;
   padding-top: 2.5%;
   z-index: -1; }
