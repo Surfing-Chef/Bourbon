@@ -31,7 +31,7 @@
       }
 
       aside {
-        @include span-columns(4 of 12);
+        @include span-columns(3 of 12);
 
       }
     }
@@ -60,18 +60,20 @@
     background: none;
     margin: 0;
     position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 70px;
-    height: 70px;
+
+    bottom: 50vh;
+    right: 2%;
     z-index: 100;
     display: none;
     text-decoration: none;
-    color: #ffffff;
-    background-color: #ff9000;
+    color: transparentize($medium-gray, 0.3);
   }
-   
+
   .back-to-top i {
-    font-size: 60px;
+    font-size: 50px;
   }
 } // body
+
+.test-fill {
+  background-color: transparentize(pink, 0.7);
+}
