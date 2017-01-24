@@ -71,7 +71,7 @@
     @include clearfix;
     position: relative;
     z-index: 999;
-    border-bottom: 1px solid $base-font-color;
+    border-bottom: 1px solid rgba(black, 0.3);
   }
 
   ul.centered-navigation-menu {
