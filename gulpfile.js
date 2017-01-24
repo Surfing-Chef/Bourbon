@@ -23,9 +23,9 @@ gulp.task('scripts', function(){
   .pipe(reload({stream: true}));
 });
 
-// Fonts Task - copy font-awesome files to directory for use
+// Fonts Task - copy Font-Awesome files to directory for use
 gulp.task('fonts', function(){
-  return gulp.src('node_modules/font-awesome/fonts/*')
+  gulp.src(['node_modules/font-awesome/css/font-awesome.css', 'node_modules/font-awesome/css/font-awesome.css.map'])
     .pipe(gulp.dest('app/fonts'));
 });
 
