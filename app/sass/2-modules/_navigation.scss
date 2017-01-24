@@ -9,7 +9,7 @@
   $centered-navigation-background: #E7F1EC;
   $centered-navigation-color: shade(white, 1%);
   $centered-navigation-color-hover: $base-font-color;
-  $centered-navigation-height: 100px;
+  $centered-navigation-height: 70px;
   $centered-navigation-item-padding: 1em;
   $centered-navigation-submenu-padding: 1em;
   $centered-navigation-submenu-width: 12em;
@@ -72,6 +72,8 @@
     position: relative;
     z-index: 999;
     border-bottom: 1px solid rgba(black, 0.3);
+    height: 100px;
+    padding-top: $centered-navigation-height/4;
   }
 
   ul.centered-navigation-menu {
@@ -107,7 +109,7 @@
     display: block;
     line-height: $centered-navigation-height;
     overflow: hidden;
-    padding-right: $centered-navigation-submenu-padding;
+    padding-right: $centered-navigation-submenu-padding * 1.5;
     text-align: right;
     width: 100%;
     z-index: 9999;
