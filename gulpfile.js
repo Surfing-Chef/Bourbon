@@ -95,4 +95,4 @@ gulp.task('watch', function(){
 });
 
 // Default Task - runs specified tasks asynchronously
-gulp.task('default', ['scripts', 'fonts', 'sassDev', 'sassDep', 'html', 'browser-sync', 'watch']);
+gulp.task('default', ['scripts', 'sassDev', 'sassDep', 'html', 'browser-sync', 'watch']);
