@@ -26,7 +26,7 @@ gulp.task('scripts', function(){
 // Fonts Task - copy Font-Awesome files to directory for use
 gulp.task('fonts', function(){
   gulp.src(['node_modules/font-awesome/css/font-awesome.css', 'node_modules/font-awesome/css/font-awesome.css.map'])
-    .pipe(gulp.dest('app/fonts'));
+    .pipe(gulp.dest('app/css'));
 });
 
 // Sass Tasks - tasks related to sc scss and css
