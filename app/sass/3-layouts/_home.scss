@@ -10,7 +10,37 @@
     background-position: 50% 50%;
     overflow-x: hidden;
 
-  }
+    section.callout {
+      @include outer-container;
+      @include margin(10% auto 0 auto);
+
+      div {
+        background: transparentize(white, 0.6);
+        width: 60%;
+        margin: 0 auto 30px auto;
+        @include padding(1em 1em 1em 1em);
+        border-radius: $base-border-radius;
+        border: 1px solid transparentize(black, 0.7);
+
+        p {
+          color: shade($dark-gray, 15%);
+          text-shadow: 1px 1px tint($dark-gray, 55%);
+        }
+
+        .quote {
+          font-size: $base-font-size * 1.2;
+
+        }
+        .author {
+          text-align: right;
+          margin-bottom: 0;
+        }
+        .author:before {
+          content:"\2013  ";
+        }
+      } // section.callout > div
+    }  // section.callout
+  } // header
 
   main {
     @include padding(2%);
