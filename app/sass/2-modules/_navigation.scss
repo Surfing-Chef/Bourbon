@@ -8,7 +8,7 @@
   $centered-navigation-logo-height: 2em;
   $centered-navigation-background: #E7F1EC;
   $centered-navigation-color: shade(white, 1%);
-  $centered-navigation-color-hover: $base-font-color;
+  $centered-navigation-color-hover: shade($dark-gray, 15%);;
   $centered-navigation-height: 70px;
   $centered-navigation-item-padding: 1em;
   $centered-navigation-submenu-padding: 1em;
@@ -123,6 +123,7 @@
       &:focus,
       &:hover {
         color: $centered-navigation-color-hover;
+        text-shadow: 1px 1px tint($dark-gray, 70%);
       }
     }
 
