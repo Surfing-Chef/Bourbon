@@ -8,6 +8,7 @@ Content with sidebars
 [Bourbon](http://bourbon.io/docs/)   
 [SASS](http://sass-lang.com/libsass)
 [Font Awesome](http://fontawesome.io/icons/)  
+[Random Quote Generator](http://codepen.io/kkoutoup/pen/zxmGLE)  
 
 #### Callout blockquote
 A default quote that will be replaced by a randomly selected quote from a custom library.
