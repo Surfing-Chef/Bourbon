@@ -9,6 +9,9 @@ Content with sidebars
 [SASS](http://sass-lang.com/libsass)
 [Font Awesome](http://fontawesome.io/icons/)  
 
+#### Callout blockquote
+A default quote that will be replaced by a randomly selected quote from a custom library.
+
 ```html
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 ```
