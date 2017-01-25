@@ -9,6 +9,8 @@ Content with sidebars
 [SASS](http://sass-lang.com/libsass)
 [Font Awesome](http://fontawesome.io/icons/)  
 [Random Quote Generator](http://codepen.io/kkoutoup/pen/zxmGLE)  
+[CSS Tricks Glyphs and Special Characters](https://css-tricks.com/snippets/html/glyphs/)  
+[Fade in Mixin](https://coderwall.com/p/-xfqmq/scss-keyframe-mixin)  
 
 #### Callout blockquote
 A default quote that will be replaced by a randomly selected quote from a custom library.
