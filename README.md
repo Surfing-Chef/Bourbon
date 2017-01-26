@@ -17,6 +17,8 @@ A default quote that will be replaced by a randomly selected quote from a custom
 
 #### About
 Looking for a better weather widget or will design outer-container  
+[Ideas on GitHub](https://github.com/search?utf8=%E2%9C%93&q=weather+widget)
+
 
 #### Contacts  
 A full span layout, no aside, REFILLS pattern.
