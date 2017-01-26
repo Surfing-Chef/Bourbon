@@ -19,7 +19,7 @@
       div {
         background: transparentize(white, 0.6);
         width: 60%;
-        margin: 0 auto 30px auto;
+        margin: 0 auto;
         @include padding(1em 1em 1em 1em);
         border-radius: $base-border-radius;
         border: 1px solid transparentize(black, 0.7);
@@ -65,6 +65,17 @@
       aside {
         @include span-columns(3 of 12);
 
+      // weather widget
+        .aw-current-weather-inner h3 {
+          font-family: $sans-serif;
+        }
+        .aw-temp-time-desc {
+          color: #bbb;
+          text-shadow: 1px 1px #000;
+        }
+        #link_get_widget, .aw-get-widget-footer {
+          display: none;
+        }
       }
     }
   } // main
