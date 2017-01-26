@@ -15,9 +15,7 @@ Content with sidebars
 #### Callout blockquote
 A default quote that will be replaced by a randomly selected quote from a custom library.
 
-#### Looking for a better weather widget or will design outer-container  
-
-#### The Recently section will be a tabbed pattern form REFILLS.  
+#### Looking for a better weather widget or will design outer-container   
 
 ```html
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
