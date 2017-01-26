@@ -360,6 +360,18 @@ html {
 /*! 1-Base */
 /*! scVariables.scss */
 /*! 2-modules */
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0; }
+  50% {
+    transform: translateY(20%);
+    opacity: .85; }
+  100% {
+    transform: translateY(15%);
+    opacity: 1; } }
+
 .type-system-geometric {
   font-family: "Questrial", sans-serif;
   text-align: left; }
@@ -488,13 +500,13 @@ html {
       .centered-navigation .centered-navigation-mobile-menu {
         display: none; } }
     .centered-navigation .centered-navigation-mobile-menu:focus, .centered-navigation .centered-navigation-mobile-menu:hover {
-      color: #ddd; }
+      color: #2b2b2b; }
   .centered-navigation .centered-navigation-wrapper {
     position: relative;
     z-index: 999;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     height: 100px;
-    padding-top: 17.5px; }
+    padding-top: 14px; }
     .centered-navigation .centered-navigation-wrapper::after {
       clear: both;
       content: "";
@@ -531,7 +543,8 @@ html {
       outline: none;
       text-decoration: none; }
       .centered-navigation ul li.nav-link a:focus, .centered-navigation ul li.nav-link a:hover {
-        color: #ddd; }
+        color: #2b2b2b;
+        text-shadow: 1px 1px #c2c2c2; }
     @media screen and (min-width: 900px) {
       .centered-navigation ul li.nav-link {
         background: transparent;
@@ -643,6 +656,37 @@ html {
   background-size: cover;
   background-position: 50% 50%;
   overflow-x: hidden; }
+  .home header section.callout {
+    opacity: 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10% auto 0;
+    animation: fadeIn 0.5s ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s; }
+    .home header section.callout::after {
+      clear: both;
+      content: "";
+      display: block; }
+    .home header section.callout div {
+      background: rgba(255, 255, 255, 0.4);
+      width: 60%;
+      margin: 0 auto 30px auto;
+      padding: 1em;
+      border-radius: 3px;
+      border: 1px solid rgba(0, 0, 0, 0.3); }
+      .home header section.callout div p {
+        color: #2b2b2b;
+        text-shadow: 1px 1px #a3a3a3; }
+      .home header section.callout div .quote {
+        font-size: 1.2em; }
+      .home header section.callout div .author {
+        text-align: right;
+        margin-bottom: 0; }
+      .home header section.callout div .author:before {
+        content: "\2013  "; }
 
 .home main {
   padding: 2%;
