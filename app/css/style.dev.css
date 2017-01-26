@@ -646,6 +646,78 @@ html {
             text-align: left;
             width: 12em; } }
 
+.accordion-tabs {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+  padding: 0; }
+  .accordion-tabs:last-child {
+    margin-right: 0; }
+  .accordion-tabs::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media screen and (max-width: 600px) {
+    .accordion-tabs {
+      border: 1px solid #ddd;
+      border-radius: 3px; } }
+  .accordion-tabs .tab-header-and-content {
+    list-style: none; }
+    @media screen and (min-width: 600px) {
+      .accordion-tabs .tab-header-and-content {
+        display: inline; } }
+    .accordion-tabs .tab-header-and-content:first-child .tab-link {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px; }
+      @media screen and (max-width: 600px) {
+        .accordion-tabs .tab-header-and-content:first-child .tab-link {
+          border-top: 0; } }
+    @media screen and (max-width: 600px) {
+      .accordion-tabs .tab-header-and-content:last-child .tab-link {
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px; } }
+  .accordion-tabs .tab-link {
+    background-color: #333;
+    border-top: 1px solid #ddd;
+    color: #333;
+    display: block;
+    font-weight: bold;
+    padding: 0.75em 0.809em;
+    text-decoration: none; }
+    @media screen and (min-width: 600px) {
+      .accordion-tabs .tab-link {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        border-top: 0;
+        display: inline-block; } }
+    .accordion-tabs .tab-link:hover {
+      color: #1565c0; }
+    .accordion-tabs .tab-link:focus {
+      outline: none; }
+    .accordion-tabs .tab-link.is-active {
+      background-color: #f7f7f7; }
+      @media screen and (min-width: 600px) {
+        .accordion-tabs .tab-link.is-active {
+          background-color: #f7f7f7;
+          border: 1px solid #ddd;
+          border-bottom-color: #f7f7f7;
+          margin-bottom: -1px; } }
+  .accordion-tabs .tab-content {
+    background: #f7f7f7;
+    display: none;
+    padding: 1.5em 1.618em;
+    width: 100%; }
+    @media screen and (min-width: 600px) {
+      .accordion-tabs .tab-content {
+        border: 1px solid #ddd;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;
+        float: left; } }
+
 /*! 3-layouts */
 /*! home.scss */
 .home header {
@@ -673,7 +745,7 @@ html {
     .home header section.callout div {
       background: rgba(255, 255, 255, 0.4);
       width: 60%;
-      margin: 0 auto 30px auto;
+      margin: 0 auto;
       padding: 1em;
       border-radius: 3px;
       border: 1px solid rgba(0, 0, 0, 0.3); }
@@ -721,6 +793,13 @@ html {
       width: 23.23176%; }
       .home main article aside:last-child {
         margin-right: 0; }
+      .home main article aside .aw-current-weather-inner h3 {
+        font-family: "Questrial", sans-serif; }
+      .home main article aside .aw-temp-time-desc {
+        color: #bbb;
+        text-shadow: 1px 1px #000; }
+      .home main article aside #link_get_widget, .home main article aside .aw-get-widget-footer {
+        display: none; }
 
 .home footer {
   position: fixed;
