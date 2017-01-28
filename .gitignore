@@ -60,6 +60,7 @@ $RECYCLE.BIN/
 *.log
 *.sql
 *.sqlite
+*sky.json
 
 # Build Systems #
 #################
