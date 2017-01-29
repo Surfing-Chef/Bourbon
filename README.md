@@ -10,7 +10,8 @@ Content with sidebars
 [Font Awesome](http://fontawesome.io/icons/)  
 [Random Quote Generator](http://codepen.io/kkoutoup/pen/zxmGLE)  
 [CSS Tricks Glyphs and Special Characters](https://css-tricks.com/snippets/html/glyphs/)  
-[Fade in Mixin](https://coderwall.com/p/-xfqmq/scss-keyframe-mixin)  
+[Fade in Mixin](https://coderwall.com/p/-xfqmq/scss-keyframe-mixin)
+[Dark Sky PHP Tut](http://lekkerlogic.com/2015/08/dark-sky-forecast-io-weather-api-part-1/)  
 
 #### Callout blockquote
 A default quote that will be replaced by a randomly selected quote from a custom library.
