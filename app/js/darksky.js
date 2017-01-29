@@ -64,7 +64,7 @@ function weatherData(json) {
   // Create Weather Widget
   target.innerHTML =
     "<h4>Nakusp, B.C.</h4>"+
-    "<img src=\"../images/"+currently_icon+".svg\" alt=\""+currently_icon+"\">"+
+    "<img src=\"../images/"+currently_icon+".png\" alt=\""+currently_icon+"\">"+
     "<span class=\"currently\">"+currently+",</span>"+ "</br>"+
     "<span class=\"currently\">Temperature is: "+currently_temp+"</span>" +"</br>"+
     "<span class=\"currently\">Feels Like: "+apparent_temp+"</span>" + "</br>"+
