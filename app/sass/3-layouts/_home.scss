@@ -65,16 +65,16 @@
       aside {
         @include span-columns(3 of 12);
 
-      // weather widget
-        .aw-current-weather-inner h3 {
-          font-family: $sans-serif;
-        }
-        .aw-temp-time-desc {
-          color: #bbb;
-          text-shadow: 1px 1px #000;
-        }
-        #link_get_widget, .aw-get-widget-footer {
-          display: none;
+        // weather widget
+        #weather {
+          img {
+            @include span-columns(3 of 3);
+            height: 300px;
+            margin: -111px auto;
+            @include clearfix;
+            opacity: 0.1;
+          }
+
         }
       }
     }
