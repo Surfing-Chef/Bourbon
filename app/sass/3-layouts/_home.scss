@@ -1,6 +1,9 @@
 /*! home.scss */
+
+// body >>
 .home {
 
+  // header >>
   header {
     position: relative;
     width: 100%;
@@ -43,7 +46,9 @@
       } // section.callout > div
     }  // section.callout
   } // header
+  //<< END: header
 
+  // main content >>
   main {
     @include padding(2%);
     background: $light-gray;
@@ -63,23 +68,24 @@
       }
 
       aside {
-        @include span-columns(3 of 12);
+        @include span-columns(4 of 12);
 
         // weather widget
         #weather {
           img {
-            @include span-columns(3 of 3);
             height: 300px;
             margin: -111px auto;
             @include clearfix;
             opacity: 0.1;
           }
-
         }
       }
-    }
-  } // main
 
+    }// article
+  } // main
+  //<< END: main
+
+  // footer >>
   footer {
     position: fixed;
     width: 100%;
@@ -98,7 +104,9 @@
       @include shift(3);
     } // footer section
   } // footer
+  //<< END: footer
 
+  // back-to-top button >>
   .back-to-top {
     background: none;
     margin: 0;
@@ -115,8 +123,12 @@
   .back-to-top i {
     font-size: 50px;
   }
-} // body
+  //<< END: back-to-top button
 
-.test-fill {
+}
+//<< END: body
+
+// test-fill
+  .test-fill {
   background-color: transparentize(pink, 0.7);
 }
