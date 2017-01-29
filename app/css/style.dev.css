@@ -843,3 +843,43 @@ html {
 
 .test-fill {
   background-color: rgba(255, 192, 203, 0.3); }
+
+.clear-day {
+  background: linear-gradient(rgba(221, 221, 221, 0.92), rgba(221, 221, 221, 0.92)), url("../../images/clear-day.svg") center -50px no-repeat;
+  background-size: 150%; }
+
+.clear-night {
+  background: linear-gradient(rgba(221, 221, 221, 0.92), rgba(221, 221, 221, 0.92)), url("../../images/clear-night.svg") center -50px no-repeat;
+  background-size: 150%; }
+
+.cloudy {
+  background: linear-gradient(rgba(221, 221, 221, 0.92), rgba(221, 221, 221, 0.92)), url("../../images/cloudy.svg") center -50px no-repeat;
+  background-size: 150%; }
+
+.fog {
+  background: inear-gradient(rgba(221, 221, 221, 0.92), rgba(221, 221, 221, 0.92)), url("../../images/fog.svg") center -50px no-repeat;
+  background-size: 150%; }
+
+.partly-cloudy-day {
+  background: linear-gradient(rgba(221, 221, 221, 0.92), rgba(221, 221, 221, 0.92)), url("../../images/partly-cloudy-day.svg") center -50px no-repeat;
+  background-size: 150%; }
+
+.partly-cloudy-night {
+  background: linear-gradient(rgba(221, 221, 221, 0.92), rgba(221, 221, 221, 0.92)), url("../../images/partly-cloudy-night.svg") center -50px no-repeat;
+  background-size: 150%; }
+
+.rain {
+  background: linear-gradient(rgba(221, 221, 221, 0.92), rgba(221, 221, 221, 0.92)), url("../../images/rain.svg") center -50px no-repeat;
+  background-size: 150%; }
+
+.sleet {
+  background: linear-gradient(rgba(221, 221, 221, 0.92), rgba(221, 221, 221, 0.92)), url("../../images/sleet.svg") center -50px no-repeat;
+  background-size: 150%; }
+
+.snow {
+  background: linear-gradient(rgba(221, 221, 221, 0.92), rgba(221, 221, 221, 0.92)), url("../../images/snow.svg") center -50px no-repeat;
+  background-size: 150%; }
+
+.wind {
+  background: linear-gradient(rgba(221, 221, 221, 0.92), rgba(221, 221, 221, 0.92)), url("../../images/wind.svg") center -50px no-repeat;
+  background-size: 150%; }
