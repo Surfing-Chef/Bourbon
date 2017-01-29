@@ -18,7 +18,8 @@ var urlBase = 'https://api.darksky.net/forecast/';
 var latitude = '50.2963';
 var longitude = '-117.6857';
 var loc = latitude +','+ longitude;
-var url = urlBase + api + '/' + loc;
+var units = 'auto';
+var url = urlBase + api + '/' + loc + '?units=' + units;
 var dsForecastUrl = "https://darksky.net/forecast/"+loc+"/ca12/en";
 
 // Create the function the JSON data will be passed to.
@@ -46,40 +47,36 @@ function weatherData(json) {
     }
   }
 
-  // Current weather
+  // Currently
   ds_current_timestamp  = json.currently.time;
   ds_current_full_date = Date(ds_current_timestamp);
   ds_current_date = dateTime(ds_current_full_date, 'date');
-  ds_current_time = dateTime(ds_current_full_date, 'time');
-  ds_current_summary  = json.currently.summary;
-  ds_current_icon  = json.currently.icon;
-  ds_current_nearestStormDistance  = json.currently.nearestStormDistance;
-  ds_current_nearestStormBearing  = json.currently.nearestStormBearing;
-  ds_current_precipIntensity  = json.currently.precipIntensity;
-  ds_current_precipProbability  = json.currently.precipProbability;
-  ds_current_temperature  = json.currently.temperature;
-  ds_current_apparentTemperature  = json.currently.apparentTemperature;
-  ds_current_dewPoint  = json.currently.dewPoint;
-  ds_current_humidity  = json.currently.humidity;
-  ds_current_windSpeed  = json.currently.windSpeed;
-  ds_current_windBearing  = json.currently.windBearing;
-  ds_current_visibility  = json.currently.visibility;
-  ds_current_cloudCover  = json.currently.cloudCover;
-  ds_current_pressure  = json.currently.pressure;
-  ds_current_ozone  = json.currently.ozone;
+  updated = dateTime(ds_current_full_date, 'time');
+  currently  = json.currently.summary;
+  currently_icon  = json.currently.icon;
+  alert(currently_icon);
+  currently_temp  = Math.round(json.currently.temperature);
+  apparent_temp  = Math.round(json.currently.apparentTemperature);
+  // ds_current_humidity  = json.currently.humidity;
+  // ds_current_windSpeed  = json.currently.windSpeed;
+  // ds_current_windBearing  = json.currently.windBearing;
+  // ds_current_visibility  = json.currently.visibility;
+  // ds_current_cloudCover  = json.currently.cloudCover;
+  // ds_current_pressure  = json.currently.pressure;
+  // ds_current_ozone  = json.currently.ozone;
 
   // Forecast summaries
-  ds_hourly_summary  = json.hourly.summary;
-  ds_daily_summary  = json.daily.summary;
+  st_forecast_summary  = json.hourly.summary;
+  lt_forecast_summary  = json.daily.summary;
 
   // Create Weather Widget
   target.innerHTML =
     "<h4>Nakusp, B.C.</h4>"+
-    "<span>"+ds_current_summary+",</span>"+ "</br>"+
-    "<span>Temperature is: "+ds_current_temperature+"</span>" +"</br>"+
-    "<span>Feels Like: "+ds_current_apparentTemperature+"</span>" + "</br>" +
-    "<span>Short Term: "+ds_hourly_summary+"</span>" +"</br>"+
-    "<span>Long Term: "+ds_daily_summary+"</span>" +"</br>"+
+    "<span>"+currently+",</span>"+ "</br>"+
+    "<span>Temperature is: "+currently_temp+"</span>" +"</br>"+
+    "<span>Feels Like: "+apparent_temp+"</span>" + "</br>" +
+    "<span>Short Term: "+st_forecast_summary+"</span>" +"</br>"+
+    "<span>Long Term: "+lt_forecast_summary+"</span>" +"</br>"+
     "";
 }
 
