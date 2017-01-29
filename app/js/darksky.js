@@ -54,16 +54,8 @@ function weatherData(json) {
   updated = dateTime(ds_current_full_date, 'time');
   currently  = json.currently.summary;
   currently_icon  = json.currently.icon;
-  alert(currently_icon);
   currently_temp  = Math.round(json.currently.temperature);
   apparent_temp  = Math.round(json.currently.apparentTemperature);
-  // ds_current_humidity  = json.currently.humidity;
-  // ds_current_windSpeed  = json.currently.windSpeed;
-  // ds_current_windBearing  = json.currently.windBearing;
-  // ds_current_visibility  = json.currently.visibility;
-  // ds_current_cloudCover  = json.currently.cloudCover;
-  // ds_current_pressure  = json.currently.pressure;
-  // ds_current_ozone  = json.currently.ozone;
 
   // Forecast summaries
   st_forecast_summary  = json.hourly.summary;
@@ -72,12 +64,13 @@ function weatherData(json) {
   // Create Weather Widget
   target.innerHTML =
     "<h4>Nakusp, B.C.</h4>"+
-    "<span>"+currently+",</span>"+ "</br>"+
-    "<span>Temperature is: "+currently_temp+"</span>" +"</br>"+
-    "<span>Feels Like: "+apparent_temp+"</span>" + "</br>" +
-    "<span>Short Term: "+st_forecast_summary+"</span>" +"</br>"+
-    "<span>Long Term: "+lt_forecast_summary+"</span>" +"</br>"+
-    "";
+    "<img src=\"../images/"+currently_icon+".svg\" alt=\""+currently_icon+"\">"+
+    "<span class=\"currently\">"+currently+",</span>"+ "</br>"+
+    "<span class=\"currently\">Temperature is: "+currently_temp+"</span>" +"</br>"+
+    "<span class=\"currently\">Feels Like: "+apparent_temp+"</span>" + "</br>"+
+    "<span class=\"currently\">Short Term: "+st_forecast_summary+"</span>" +"</br>"+
+    "<span class=\"currently\">Long Term: "+lt_forecast_summary+"</span>" +"</br>"+
+    "<span class=\"currently\">updated: "+ds_current_full_date+"</span>";
 }
 
 $.ajax({
