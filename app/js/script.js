@@ -1,7 +1,7 @@
 // DOCUMENT READY
 $(document).ready(function() {
 
-  // BACK TO TOP
+  // BACK TO TOP BUTTON
   //----------------------------------------------
   var offset = 100;
   var duration = 300;
