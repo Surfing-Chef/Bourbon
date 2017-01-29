@@ -4,12 +4,11 @@
 //------------------------------------------------------------------//
 // VARIABLES
 $.ajax({
-   url: './package.json',
+   url: './darksky.json',
    async: false,
    dataType: 'json',
    success: function (data) {
        mydata = data;
-       console.log(mydata);
        myapi = data.api;
    }
 });
@@ -25,7 +24,7 @@ var dsForecastUrl = "https://darksky.net/forecast/"+loc+"/ca12/en";
 // Create the function the JSON data will be passed to.
 function weatherData(json) {
   // test container
-  test_target = document.getElementById('api-data');
+  target = document.getElementById('weather');
   // current date (timestamp)
   //unixDate = unx;
 
@@ -69,8 +68,19 @@ function weatherData(json) {
   ds_current_pressure  = json.currently.pressure;
   ds_current_ozone  = json.currently.ozone;
 
+  // Forecast summaries
+  ds_hourly_summary  = json.hourly.summary;
+  ds_daily_summary  = json.daily.summary;
+
   // Create Weather Widget
-  test_target.innerHTML = ds_current_time;
+  target.innerHTML =
+    "<h4>Nakusp, B.C.</h4>"+
+    "<span>"+ds_current_summary+",</span>"+ "</br>"+
+    "<span>Temperature is: "+ds_current_temperature+"</span>" +"</br>"+
+    "<span>Feels Like: "+ds_current_apparentTemperature+"</span>" + "</br>" +
+    "<span>Short Term: "+ds_hourly_summary+"</span>" +"</br>"+
+    "<span>Long Term: "+ds_daily_summary+"</span>" +"</br>"+
+    "";
 }
 
 $.ajax({
