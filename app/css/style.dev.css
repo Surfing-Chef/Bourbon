@@ -1280,19 +1280,13 @@ html {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 23.23176%; }
+      width: 31.76157%; }
       .home main article aside:last-child {
         margin-right: 0; }
       .home main article aside #weather img {
-        float: left;
-        display: block;
-        margin-right: 10.1484%;
-        width: 100%;
         height: 300px;
         margin: -111px auto;
         opacity: 0.1; }
-        .home main article aside #weather img:last-child {
-          margin-right: 0; }
         .home main article aside #weather img::after {
           clear: both;
           content: "";
