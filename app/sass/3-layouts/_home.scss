@@ -94,8 +94,14 @@
 
     // specific article parallax backgrounds
     .bg-culinary {
-      background: pink;
+      background: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('../../images/cast-iron.jpg') 50% 50%/cover fixed;
+
     }
+
   } // main
   //<< END: main
 
