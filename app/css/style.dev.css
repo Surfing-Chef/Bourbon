@@ -1251,20 +1251,20 @@ html {
         content: "\2013  "; }
 
 .home main {
-  padding: 2%;
   background: #ddd;
   margin-bottom: 200px;
-  border-bottom: 1px solid #4d4d4d; }
-  .home main article {
+  border-bottom: 1px solid #4d4d4d;
+  padding-top: 2%; }
+  .home main article div.article-content {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 1em; }
-    .home main article::after {
+    .home main article div.article-content::after {
       clear: both;
       content: "";
       display: block; }
-    .home main article section {
+    .home main article div.article-content section {
       float: left;
       display: block;
       margin-right: 2.35765%;
@@ -1274,23 +1274,26 @@ html {
       border-left-width: 3px;
       border-right-color: #cccccc;
       border-right-style: solid; }
-      .home main article section:last-child {
+      .home main article div.article-content section:last-child {
         margin-right: 0; }
-    .home main article aside {
+    .home main article div.article-content aside {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 31.76157%; }
-      .home main article aside:last-child {
+      .home main article div.article-content aside:last-child {
         margin-right: 0; }
-      .home main article aside #weather img {
-        height: 300px;
-        margin: -111px auto;
-        opacity: 0.1; }
-        .home main article aside #weather img::after {
-          clear: both;
-          content: "";
-          display: block; }
+      .home main article div.article-content aside #weather {
+        position: relative; }
+        .home main article div.article-content aside #weather p {
+          margin: 11px 0; }
+        .home main article div.article-content aside #weather img {
+          margin: 0 auto;
+          opacity: 0.05;
+          position: absolute;
+          top: -50px; }
+  .home main .bg-culinary {
+    background: pink; }
 
 .home footer {
   position: fixed;
