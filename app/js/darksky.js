@@ -63,14 +63,15 @@ function weatherData(json) {
 
   // Create Weather Widget
   target.innerHTML =
-    "<h4>Nakusp, B.C.</h4>"+
+    "<p class=\"gps\">"+latitude+", "+longitude+"</p>"+
+    "<p>Backcountry. Nakusp, British Columbia</p>"+
     "<img src=\"../images/"+currently_icon+".png\" alt=\""+currently_icon+"\">"+
-    "<span class=\"currently\">"+currently+",</span>"+ "</br>"+
-    "<span class=\"currently\">Temperature is: "+currently_temp+"</span>" +"</br>"+
-    "<span class=\"currently\">Feels Like: "+apparent_temp+"</span>" + "</br>"+
-    "<span class=\"currently\">Short Term: "+st_forecast_summary+"</span>" +"</br>"+
-    "<span class=\"currently\">Long Term: "+lt_forecast_summary+"</span>" +"</br>"+
-    "<span class=\"currently\">updated: "+ds_current_full_date+"</span>";
+    "<p class=\"currently\">"+currently+"</p>"+
+    "<p class=\"cur-temp\">Temperature is: "+currently_temp+"</p>"+
+    "<p class=\"app-temp\">Feels Like: "+apparent_temp+"</p>"+
+    "<p class=\"st-forecast\">Short Term: "+st_forecast_summary+"</p>"+
+    "<p class=\"lt-forecast\">Long Term: "+lt_forecast_summary+"</p>"+
+    "<p class=\"updated\">updated: "+ds_current_full_date+"</p>";
 }
 
 $.ajax({
