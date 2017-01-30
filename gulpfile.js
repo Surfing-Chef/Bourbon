@@ -41,8 +41,10 @@ gulp.task('sassDev', function(){
   gulp.src('app/sass/**/*.scss')
   .pipe(plumber())
   .pipe(rename({suffix:'.dev'}))
-  .pipe(sass({outputStyle: 'nested'}))
-  .pipe(autoprefixer('last 2 versions'))
+  .pipe(sourcemaps.init())
+    .pipe(sass({sourceComments: 'map', sourceMap: 'sass', outputStyle: 'nested'}))
+    .pipe(autoprefixer('last 2 versions'))
+  .pipe(sourcemaps.write())
   .pipe(gulp.dest('app/css/'));
 });
 
