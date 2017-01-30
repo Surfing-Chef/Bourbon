@@ -78,11 +78,9 @@
           // weather widget
           #weather {
             position: relative;
-
             p {
               margin: 11px 0;
             }
-
             img {
               margin: 0 auto;
               opacity: 0.05;
@@ -98,10 +96,10 @@
     // specific article parallax backgrounds
     .bg-culinary {
       background: linear-gradient(
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),
-    url('../../images/cast-iron.jpg') 50% 50%/cover fixed;
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url('../../images/cast-iron.jpg') 50% 50%/cover fixed;
 
     }
 
