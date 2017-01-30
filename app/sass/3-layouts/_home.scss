@@ -50,38 +50,52 @@
 
   // main content >>
   main {
-    @include padding(2%);
     background: $light-gray;
     margin-bottom: 200px;
     border-bottom: 1px solid shade(white, 70%);
+    padding-top: 2%;
 
     article {
-      @include outer-container;
-      @include padding(1em null null null);
 
-      section {
-        @include span-columns(8 of 12);
-        @include padding(null 2em null null);
-        @include border-width(null 3px null);
-        @include border-color(null tint($medium-gray, 50%) null null);
-        @include border-style(null solid null null);
-      }
+      div.article-content {
+        @include outer-container;
+        @include padding(1em null null null);
 
-      aside {
-        @include span-columns(4 of 12);
+        section {
+          @include span-columns(8 of 12);
+          @include padding(null 2em null null);
+          @include border-width(null 3px null);
+          @include border-color(null tint($medium-gray, 50%) null null);
+          @include border-style(null solid null null);
+        }
 
-        // weather widget
-        #weather {
-          img {
-            height: 300px;
-            margin: -111px auto;
-            @include clearfix;
-            opacity: 0.1;
+        aside {
+          @include span-columns(4 of 12);
+
+          // weather widget
+          #weather {
+            position: relative;
+
+            p {
+              margin: 11px 0;
+            }
+
+            img {
+              margin: 0 auto;
+              opacity: 0.05;
+              position: absolute;
+              top: -50px;
+            }
           }
         }
-      }
 
+      }// div.article-content
     }// article
+
+    // specific article parallax backgrounds
+    .bg-culinary {
+      background: pink;
+    }
   } // main
   //<< END: main
 
