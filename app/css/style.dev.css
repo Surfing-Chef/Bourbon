@@ -1214,7 +1214,8 @@ html {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url("../../images/LondonRidgeSouthSideDarker.jpg") fixed;
+  background-image: url("../../images/LondonRidgeSouthSideDarker.jpg");
+  background-position: fixed;
   background-size: cover;
   background-position: 50% 50%;
   overflow-x: hidden; }
@@ -1293,7 +1294,7 @@ html {
           position: absolute;
           top: -50px; }
   .home main .bg-culinary {
-    background: pink; }
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/cast-iron.jpg") 50% 50%/cover fixed; }
 
 .home footer {
   position: fixed;
