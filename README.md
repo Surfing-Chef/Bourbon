@@ -11,15 +11,15 @@ Content with sidebars
 [Random Quote Generator](http://codepen.io/kkoutoup/pen/zxmGLE)  
 [CSS Tricks Glyphs and Special Characters](https://css-tricks.com/snippets/html/glyphs/)  
 [Fade in Mixin](https://coderwall.com/p/-xfqmq/scss-keyframe-mixin)
-[Dark Sky PHP Tut](http://lekkerlogic.com/2015/08/dark-sky-forecast-io-weather-api-part-1/)  
+[Dark Sky PHP Tut](http://lekkerlogic.com/2015/08/dark-sky-forecast-io-weather-api-part-1/)
+[Sitepoint AJAX tut](https://www.sitepoint.com/ajaxjquery-getjson-simple-example/)   
 
 #### Callout blockquote
 A default quote that will be replaced by a randomly selected quote from a custom library.
 
 #### About
-Looking for a better weather widget or will design outer-container  
-[Ideas on GitHub](https://github.com/search?utf8=%E2%9C%93&q=weather+widget)
-
+Dark Sky  
+IMPORTANT: Since the darksky.json file is not tracked, it has to be passed to each development environment seperately, more secure.
 
 #### Contacts  
 A full span layout, no aside, REFILLS pattern.
