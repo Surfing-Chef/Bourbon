@@ -93,13 +93,29 @@
       }// div.article-content
     }// article
 
+    // contact form
+    #contacts{
+      div {
+        aside{
+          input{
+            background {
+              color: white;
+            }
+          }
+        }
+        section{
+          border: none;
+        }
+      }
+    }
+
     // specific article parallax backgrounds
     .bg-culinary {
       background: linear-gradient(
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
       ),
-      url('../../images/cast-iron.jpg') 50% 50%/cover fixed;
+      url('../../images/cast-iron.jpg') 0 30%/cover fixed;
 
     }
 
