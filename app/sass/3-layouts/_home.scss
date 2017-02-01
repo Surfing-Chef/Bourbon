@@ -73,8 +73,9 @@
           // weather widget
           #weather {
             position: relative;
-            p {
-              margin: 11px 0;
+            span {
+              display: block;
+              margin: 7px 0;
             }
             img {
               margin: 0 auto;
@@ -83,10 +84,33 @@
               top: -50px;
             }
           }
+          div:nth-child(3) {
+            @include span-columns(6);
+            @include shift(4);
+            padding: 20px 0;
+          }
         }
 
       }// div.article-content
     }// article
+
+    #culinary {
+      h1, h3, p:nth-child(2) {
+        color: tint($dark-gray, 75%);
+        text-shadow: 1px 1px shade($dark-gray, 40%);
+      }
+
+        .tab-link {
+          color: $blue;
+        }
+        .tab-link:hover {
+          color: black;
+        }
+        .is-active {
+          color: $base-font-color;
+        }
+
+    }
 
     // contact form
     #contacts{

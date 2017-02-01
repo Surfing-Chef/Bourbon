@@ -66,15 +66,15 @@ function weatherData(json) {
 
   // Create Weather Widget
   target.innerHTML =
-    "<p class=\"gps\">"+latitude+", "+longitude+"</p>"+
-    "<p>Backcountry. Nakusp, British Columbia</p>"+
+    "<span class=\"gps\">"+latitude+", "+longitude+"</span>"+
+    "<span>Backcountry. Nakusp, British Columbia</span>"+
     "<img src=\"../images/"+currently_icon+".png\" alt=\""+currently_icon+"\">"+
-    "<p class=\"currently\">"+currently+"</p>"+
-    "<p class=\"cur-temp\">Temperature is: "+currently_temp+"</p>"+
-    "<p class=\"app-temp\">Feels Like: "+apparent_temp+"</p>"+
-    "<p class=\"st-forecast\">Short Term: "+st_forecast_summary+"</p>"+
-    "<p class=\"lt-forecast\">Long Term: "+lt_forecast_summary+"</p>"+
-    "<p class=\"updated\">updated: "+ds_current_full_date+"</p>";
+    "<span class=\"currently\">"+currently+"</span>"+
+    "<span class=\"cur-temp\">Temperature is: "+currently_temp+"</span>"+
+    "<span class=\"app-temp\">Feels Like: "+apparent_temp+"</span>"+
+    "<span class=\"st-forecast\">Short Term: "+st_forecast_summary+"</span>"+
+    "<span class=\"lt-forecast\">Long Term: "+lt_forecast_summary+"</span>"+
+    "<span class=\"updated\">updated: "+ds_current_full_date+"</span>";
 }
 
 // load Darksky JSON data
