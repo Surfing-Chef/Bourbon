@@ -96,15 +96,26 @@
     // contact form
     #contacts{
       div {
-        aside{
-          input{
-            background {
-              color: white;
+        section{
+          border: none;
+
+          input, textarea{
+            background: {
+              color: #F7F7F7;
             }
           }
         }
-        section{
+        aside{
           border: none;
+          div{
+            @include span-columns(6);
+
+            img {
+              display: block;
+              width: 75%;
+              margin: 0 auto;
+            }
+          }
         }
       }
     }
