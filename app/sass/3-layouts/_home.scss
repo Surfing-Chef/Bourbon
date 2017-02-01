@@ -8,12 +8,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background:{
-      image: url('../../images/LondonRidgeSouthSideDarker.jpg');
-      position: fixed;
-      size: cover;
-      position: 50% 50%;
-    }
+    background: url('../../images/LondonRidgeSouthSideDarker.jpg') 50% 50%/cover fixed;
     overflow-x: hidden;
 
     section.callout {
