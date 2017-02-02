@@ -19,12 +19,12 @@ A default quote that will be replaced by a randomly selected quote from a custom
 
 #### About
 Dark Sky  
-IMPORTANT: Since the darksky.json file is not tracked, it has to be passed to each development environment seperately, more secure.
+IMPORTANT: Since the darksky.json file is not tracked, it has to be passed to each development environment seperately, more secure.  See OneDrive
 
 #### Contacts  
-A full span layout, no aside, REFILLS pattern.
+[Contact Form Tutorial](https://code.tutsplus.com/tutorials/build-a-neat-html5-powered-contact-form--net-20426)  
 
 
 ```html
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />  
 ```
