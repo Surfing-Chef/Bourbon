@@ -51,9 +51,10 @@
     background: $light-gray;
     margin-bottom: 200px;
     border-bottom: 1px solid shade(white, 70%);
-    padding-top: 2%;
+    //padding-top: 2%;
 
     article {
+      @include padding(1em 1em 1em 1em);
 
       div.article-content {
         @include outer-container;
@@ -100,6 +101,9 @@
         text-shadow: 1px 1px shade($dark-gray, 40%);
       }
 
+      p:nth-child(2) {
+        @include span-columns(8);
+      }
         .tab-link {
           color: $blue;
         }
@@ -114,7 +118,10 @@
 
     // contact form
     #contacts{
+
       div {
+      padding-bottom: 1em;
+      
         section{
           border: none;
 
