@@ -2,7 +2,6 @@
 var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
-    php  = require('gulp-connect-php'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload,
     plumber = require('gulp-plumber'),
@@ -55,15 +54,6 @@ gulp.task('html', function(){
   .pipe(reload({stream: true}));
 });
 
-// PHP Tasks - tasks related to php
-gulp.task('php', function() {
-    php.server({
-      base: 'app',
-      port: 8010,
-      keepalive: true
-    });
-});
-
 // Browser-Sync Tasks - tasks related to browser-sync
 gulp.task('browser-sync', function(){
   browserSync({
@@ -104,8 +94,7 @@ gulp.task('watch', function(){
   gulp.watch('app/sass/**/*.scss', ['sassDev']);
   gulp.watch('app/sass/**/*.scss', ['sassDep']);
   gulp.watch('app/**/*.html', ['html']);
-  gulp.watch('app/**/*.php', ['php']);
 });
 
 // Default Task - runs specified tasks asynchronously
-gulp.task('default', ['scripts', 'sassDev', 'sassDep', 'html', 'php', 'browser-sync', 'watch']);
+gulp.task('default', ['scripts', 'sassDev', 'sassDep', 'html', 'browser-sync', 'watch']);
