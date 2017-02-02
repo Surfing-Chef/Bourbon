@@ -118,20 +118,38 @@
         section{
           border: none;
 
-          input, textarea{
+          #errors, #loading {
+            display: none;
+          }
+          #errors li:before {
+              content: ' - ';
+          }
+          #errors #info:before {
+              content: '';
+          }          input, textarea{
             background: {
               color: #F7F7F7;
             }
+          }
+          #success{
+            display: none;
+          }
+
+          #submit-button {
+            color: $base-font-color;
+            background-color: $blue;
+          }
+          #submit-button:hover {
+            color: $light-gray;
           }
         }
         aside{
           border: none;
           div{
-            @include span-columns(6);
-
+            padding-top: 5%;
             img {
               display: block;
-              width: 75%;
+              width: 35%;
               margin: 0 auto;
             }
           }
