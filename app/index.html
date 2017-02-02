@@ -104,7 +104,10 @@
       <div class="article-content">
 
         <h1>Culinaria</h1>
+
+
         <p>Offered here are some of the resources that I tend to frequent while surfing the web.  So much information is available today from so many different sources.  The list of links off to the side are some bookmarks I find useful and below are some of the more content rich sites I visit often.</p>
+
         <ul class="accordion-tabs">
           <li class="tab-header-and-content">
             <a href="javascript:void(0)" class="is-active tab-link">Food 52</a>
@@ -207,25 +210,24 @@
         <h1>Contacts</h1>
         <section id="contact-form" class="clearfix">
           <ul id="errors" class="">
-            <li id="info">There were some problems wiuth your form submission:</li>
+            <li id="info">There were some problems with your form submission:</li>
           </ul>
           <p id="success">Thanks for your message.  We'll be in touch ASAP.</p>
           <form action="process.php" method="post">
-            <label for="name">Name: <span class="required">*</span></label>
+            <label for="name">Name: </label>
             <input type="text" id="name" name="name" value="" placeholder="John Doe" required="required" autofocus="autofocus" />
 
             <label for="email"></label>
             <input type="text" />
 
-            <label for="email">Email Address: <span class="required">*</span></label>
+            <label for="email">Email Address: </label>
             <input type="email" id="email" name="email" value="" placeholder="johndoe@example.com" required="required" />
 
-            <label for="message">Message: <span class="required">*</span></label>
+            <label for="message">Message: </label>
             <textarea name="message" id="message" placeholder="Your message must be greater than 20 characters" data-minlength="20"></textarea>
 
             <span id="loading"></span>
-            <input type="submit" value="Holla!" id="submit-button"/>
-            <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+            <input type="submit" value="Send It!" id="submit-button"/>
           </form>
         </section>
 
