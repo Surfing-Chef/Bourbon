@@ -72,7 +72,10 @@ dist/
 .npm-debug.log
 tmp
 
-
 # Ruby #
 ########
 Gemfile.lock
+
+# APIs #
+########
+*sky.json
