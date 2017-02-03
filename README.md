@@ -26,9 +26,11 @@ IMPORTANT: Since the darksky.json file is not tracked, it has to be passed to ea
 Added php-connect to gulpfile.  Ensure to run `npm install gulp-connect-php --save-dev`  
 [php and browser-sync](https://fettblog.eu/php-browsersync-grunt-gulp/)  
 [sitepoint](http://stackoverflow.com/questions/36508748/using-gulp-browsersync-to-render-php-files)  
+[Start a php server with gulp](https://github.com/micahblu/gulp-connect-php)  
+[From Stack Overflow](http://stackoverflow.com/questions/28962528/browsersync-cannot-get)
+[StackOverflow](http://stackoverflow.com/questions/28962528/browsersync-cannot-get)  
+[Still after 8 hours nothing php wont load](http://duaneblake.co.uk/front-end/how-to-set-up-browsersync-with-wordpress-using-wamp-and-gulp/)
 
-
-[Start a php server with gulp](https://github.com/micahblu/gulp-connect-php)
 ```html
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />  
 ```
