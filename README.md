@@ -5,18 +5,37 @@
 ### 1.0 GENERAL
 The end goal of this website development is simple:  a WordPress site with a landing page.  Since WordPress site structures are php based it only makes sense that Bourbon Chef is developed in a like environment.  Hindsight says this should have been the first thing implemented.  However since this was not the case, development moves ahead with a bit more of an understanding of how gulp and browserSync and WAMP don't always co-operate as simply as one hopes.  It is worth noting that documentation on the internet regarding these issues can be daunting - so much and all well-intended, but overwhelming.  ***Wordpress***, ***wamp***, ***browsersync*** and ***php*** were the keywords that enabled Google to finally [help out](http://duaneblake.co.uk/front-end/how-to-set-up-browsersync-with-wordpress-using-wamp-and-gulp/).  
 
+Enhanced parallax features such as various scroll speeds in header and culinaria sections, as well as animated buttons (contact section) are planned.
+
 ### 2.0 HEADER
-#### 2.1 Callout
-A default quote that will be replaced by a randomly selected quote from a custom library.
+#### 2.1 Main Navigation
+Start with a basic, responsive top menu.  Links go to page sections as with a one page website.  
+There is a floating arrow on the right of the site that takes a visitor back to the top.  Maybe adjust the animation flow/speed?
+
+
+#### 2.2 Callout
+A default quote (WordPress tagline), replaced by a randomly selected quote from a custom library.
 
 ### 3.0 MAIN CONTENT
-#### 3.1 Weather
-Dark Sky: `darksky.json` contains a developement API key. This file is not tracked by Git so has to be passed to each development environment seperately.
+#### 3.1 About :: Weather
+ABOUT section: About the site, about me, why this is here?
+WEATHER aside: Dark Sky aside: `darksky.json` contains a developement API key. This file is not tracked by Git so has to be passed to each development environment seperately.  
 
-#### 3.2 Contacts  
-[Contact Form Tutorial](https://code.tutsplus.com/tutorials/build-a-neat-html5-powered-contact-form--net-20426)  
+#### 3.2 Culinaria :: Links
+  
+#### 3.3 Coding :: Bookmarks
+
+#### 3.4 Blog :: Recent Posts
+BLOG section: Display a most recent blog entry?  Section might not exist in final deployment, the link at the top of the page might be all that is required for referencing the blog poriton of the site.  
+RECENT POSTS: self explanatory
+
+#### 3.5 Contacts :: Repo Links
+CONTACTS: [Contact Form Tutorial](https://code.tutsplus.com/tutorials/build-a-neat-html5-powered-contact-form--net-20426)  
+Basic contact form.  
+REPO LINKS: GitHub and Pinterest buttons to animate when adding additional parallax features to the site.
 
 ### 4.0 FOOTER
+Parallax in that it appears as scroll takes the page up.
 
 
 ### 5.0 THANKS FOR ALL THE FISH...
