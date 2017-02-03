@@ -1,8 +1,9 @@
-# Bourbon-Chef-Site-1.4
-### Migrated to a PHP page workflow 
+# Bourbon-Chef-Site
+### v 1.4 - Migrated to a PHP page workflow 
 > Tags: parallax, side bars, hero landing, back to top button, php, browserSync, gulp, sass, scss  
 
 ### 1.0 GENERAL
+The end goal of this website development is simple:  a WordPress site with a landing page.  Since WordPress site structures are php based it only makes sense that Bourbon Chef is developed in a like environment.  Hindsight says this should have been the first thing implemented.  However since this was not the case, development moves ahead with a bit more of an understanding of how gulp and browserSync and WAMP don't always co-operate as simply as one hopes.  It is worth noting that documentation on the internet regarding these issues can be daunting - so much and all well-intended, but overwhelming.  ***Wordpress***, ***wamp***, ***browsersync*** and ***php*** were the keywords that enabled Google to finally [help out](http://duaneblake.co.uk/front-end/how-to-set-up-browsersync-with-wordpress-using-wamp-and-gulp/).  
 
 ### 2.0 HEADER
 #### 2.1 Callout
@@ -10,18 +11,10 @@ A default quote that will be replaced by a randomly selected quote from a custom
 
 ### 3.0 MAIN CONTENT
 #### 3.1 Weather
-Dark Sky  
-IMPORTANT: Since the darksky.json file is not tracked, it has to be passed to each development environment seperately, more secure.  See OneDrive
+Dark Sky: `darksky.json` contains a developement API key. This file is not tracked by Git so has to be passed to each development environment seperately.
 
 #### 3.2 Contacts  
 [Contact Form Tutorial](https://code.tutsplus.com/tutorials/build-a-neat-html5-powered-contact-form--net-20426)  
-Added php-connect to gulpfile.  Ensure to run `npm install gulp-connect-php --save-dev`  
-[php and browser-sync](https://fettblog.eu/php-browsersync-grunt-gulp/)  
-[sitepoint](http://stackoverflow.com/questions/36508748/using-gulp-browsersync-to-render-php-files)  
-[Start a php server with gulp](https://github.com/micahblu/gulp-connect-php)  
-[From Stack Overflow](http://stackoverflow.com/questions/28962528/browsersync-cannot-get)
-[StackOverflow](http://stackoverflow.com/questions/28962528/browsersync-cannot-get)  
-[Still after 8 hours nothing php wont load](http://duaneblake.co.uk/front-end/how-to-set-up-browsersync-with-wordpress-using-wamp-and-gulp/)
 
 ### 4.0 FOOTER
 
