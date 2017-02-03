@@ -8,7 +8,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <link href='//fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
 
