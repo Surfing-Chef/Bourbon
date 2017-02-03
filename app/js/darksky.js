@@ -68,7 +68,7 @@ function weatherData(json) {
   target.innerHTML =
     "<span class=\"gps\">"+latitude+", "+longitude+"</span>"+
     "<span>Backcountry. Nakusp, British Columbia</span>"+
-    "<img src=\"../images/"+currently_icon+".png\" alt=\""+currently_icon+"\">"+
+    "<img src=\"images/"+currently_icon+".png\" alt=\""+currently_icon+"\">"+
     "<span class=\"currently\">"+currently+"</span>"+
     "<span class=\"cur-temp\">Temperature is: "+currently_temp+"</span>"+
     "<span class=\"app-temp\">Feels Like: "+apparent_temp+"</span>"+
