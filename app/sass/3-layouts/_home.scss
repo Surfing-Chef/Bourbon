@@ -6,7 +6,7 @@
   // header >>
   header {
     position: relative;
-    width: 100%;
+    width: auto;
     height: 100vh;
     background: url('../images/LondonRidgeSouthSideDarker.jpg') 50% 50%/cover fixed;
     overflow-x: hidden;
@@ -166,11 +166,14 @@
 
     // specific article parallax backgrounds
     .bg-culinary {
-      background: linear-gradient(
+      // width: auto;
+      // height: 100vh;
+      background: /*linear-gradient(
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
-      ),
-      url('../images/cast-iron.jpg') 0 30%/cover fixed;
+      ),*/
+      url('../images/cast-ironDrk.jpg') 0 30%/cover fixed;
+      // overflow-x: hidden;
 
     }
 
