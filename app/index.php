@@ -209,16 +209,32 @@
 
         <h1>Contacts</h1>
         <section id="contact-form" class="clearfix">
-          <ul id="errors" class="">
+          <?php
+          //init variables
+          $cf = array();
+          $sr = false;
+
+          if(isset($_SESSION['cf_returndata'])){
+            $cf = $_SESSION['cf_returndata'];
+            $sr = true;
+          }
+          ?>
+          <ul id="errors" class="<?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
             <li id="info">There were some problems with your form submission:</li>
+            <?php
+              if(isset($cf['errors']) && count($cf['errors']) > 0) :
+                foreach($cf['errors'] as $error) :
+                ?>
+                <li><?php echo $error ?></li>
+                <?php
+                endforeach;
+              endif;
+            ?>
           </ul>
           <p id="success">Thanks for your message.  We'll be in touch ASAP.</p>
           <form action="process.php" method="post">
             <label for="name">Name: </label>
             <input type="text" id="name" name="name" value="" placeholder="John Doe" required="required" autofocus="autofocus" />
-
-            <label for="email"></label>
-            <input type="text" />
 
             <label for="email">Email Address: </label>
             <input type="email" id="email" name="email" value="" placeholder="johndoe@example.com" required="required" />
@@ -229,6 +245,7 @@
             <span id="loading"></span>
             <input type="submit" value="Send It!" id="submit-button"/>
           </form>
+          <?php unset($_SESSION['cf_returndata']); ?>
         </section>
 
         <aside>
