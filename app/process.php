@@ -53,8 +53,6 @@ if( isset($_POST) ){
       $emailbody = "<p>You have recieved a new message from the enquiries form on your website.</p>
                     <p><strong>Name: </strong> {$name} </p>
                     <p><strong>Email Address: </strong> {$email} </p>
-                    <p><strong>Telephone: </strong> {$telephone} </p>
-                    <p><strong>Enquiry: </strong> {$enquiry} </p>
                     <p><strong>Message: </strong> {$message} </p>
                     <p>This message was sent from the IP Address: {$ipaddress} on {$date} at {$time}</p>";
 
@@ -67,8 +65,6 @@ if( isset($_POST) ){
       'posted_form_data' => array(
           'name' => $name,
           'email' => $email,
-          'telephone' => $telephone,
-          'enquiry' => $enquiry,
           'message' => $message
       ),
       'form_ok' => $formok,
