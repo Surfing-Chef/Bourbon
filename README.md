@@ -22,6 +22,7 @@ ABOUT section: About the site, about me, why this is here?
 WEATHER aside: Dark Sky aside: `darksky.json` contains a developement API key. This file is not tracked by Git so has to be passed to each development environment seperately.  
 
 #### 3.2 Culinaria :: Links
+CULINARIA section:  the fixed background was jumpy because of a bug in IE and Edge.  Removing the top background image that only added a transparent gradient resolved the issue.
   
 #### 3.3 Coding :: Bookmarks
 
