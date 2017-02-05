@@ -235,16 +235,16 @@
           <p id="success">Thanks for your message.  We'll be in touch ASAP.</p>
           <form action="process.php" method="post">
             <label for="name">Name: </label>
-            <input type="text" id="name" name="name" value="" placeholder="John Doe" required="required" autofocus="autofocus" />
+            <input type="text" id="name" name="name" value="" placeholder="John Doe" required="required">
 
             <label for="email">Email Address: </label>
-            <input type="email" id="email" name="email" value="" placeholder="johndoe@example.com" required="required" />
+            <input type="email" id="email" name="email" value="" placeholder="johndoe@example.com" required="required">
 
             <label for="message">Message: </label>
             <textarea name="message" id="message" placeholder="Your message must be greater than 20 characters" data-minlength="20"></textarea>
 
             <span id="loading"></span>
-            <input type="submit" value="Send It!" id="submit-button"/>
+            <input type="submit" value="Send It!" id="submit-button">
           </form>
           <?php unset($_SESSION['cf_returndata']); ?>
         </section>
