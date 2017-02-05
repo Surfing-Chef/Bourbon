@@ -24,8 +24,9 @@
 
 </head>
 <body class="home type-system-geometric">
-
-  <!-- HEADER -->
+  <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->  <!-- HEADER -->
   <header>
 
     <!-- centered-navigation -->
@@ -278,11 +279,12 @@
 
     <!-- +++++ NO SCRIPTS BEFORE THIS COMMENT +++++ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
     <!-- +++++ All SCRIPTS AFTER THIS COMMENT +++++ -->
 
     <!-- IMPORTS -->
     <script src="js/script.min.js"></script>
-    <!--<script src="js/darksky.js"></script>-->
     <!-- CUSTOM -->
 
     <!-- END SCRIPT IMPORTS -->
