@@ -18,23 +18,23 @@ A default quote (WordPress tagline), replaced by a randomly selected quote from 
 
 ### 3.0 MAIN CONTENT
 #### 3.1 About :: Weather
-ABOUT section: About the site, about me, why this is here?
+ABOUT section: About the site, about me, why this is here?  
 WEATHER aside: Dark Sky aside: `darksky.json` contains a developement API key. This file is not tracked by Git so has to be passed to each development environment seperately.  
 
 #### 3.2 Culinaria :: Links
-CULINARIA section:  the fixed background was jumpy because of a bug in IE and Edge.  Removing the top background image that only added a transparent gradient resolved the issue.
+CULINARIA section:  the fixed background was jumpy because of a bug in IE and Edge.  Removing the top background image that only added a transparent gradient resolved the issue.  
   
 #### 3.3 Coding :: Bookmarks
 
 #### 3.4 Blog :: Recent Posts
 BLOG section: Display a most recent blog entry?  Section might not exist in final deployment, the link at the top of the page might be all that is required for referencing the blog poriton of the site.  
-RECENT POSTS: self explanatory
+RECENT POSTS: self explanatory  
 
 #### 3.5 Contacts :: Repo Links
 CONTACTS: [Contact Form Tutorial](https://code.tutsplus.com/tutorials/build-a-neat-html5-powered-contact-form--net-20426)  
-Basic contact form that will be replaced with a wordpress plug once migrated. The code from the tutorial works, but to test it from a local server set up without a mail server installed, [the tool mentioned below](http://www.toolheap.com/) works.  Thanks **Michael Stypko** for these pointers in the notes below the tutorial.  Saved me a heap of frustration. 
+Basic contact form that will be replaced with a wordpress plug once migrated. The code from the tutorial works, but to test it from a local server set up without a mail server installed, [the tool mentioned below](http://www.toolheap.com/) works.  Thanks **Michael Stypko** for these pointers in the notes below the tutorial.  Saved me a heap of frustration.  
 
-```
+```txt
 For those of you having problems receiving emails from the contact form, unless you have a mail server this will not work. However you can test the mail function on a local host with this http://www.toolheap.com/
 
 Also make sure that your php.ini file is edited to listen in on SMTP port 25, you may or may not need to do this because by default I believe it should be port 25. If its not just look for the mail function within the ini file and change it to 25, it should look like this:
