@@ -32,7 +32,25 @@ RECENT POSTS: self explanatory
 
 #### 3.5 Contacts :: Repo Links
 CONTACTS: [Contact Form Tutorial](https://code.tutsplus.com/tutorials/build-a-neat-html5-powered-contact-form--net-20426)  
-Basic contact form.  
+Basic contact form that will be replaced with a wordpress plug once migrated. The code from the tutorial works, but to test it from a local server set up without a mail server installed, [the tool mentioned below](http://www.toolheap.com/) works.  Thanks **Michael Stypko** for these pointers in the notes below the tutorial.  Saved me a heap of frustration. 
+
+```
+For those of you having problems receiving emails from the contact form, unless you have a mail server this will not work. However you can test the mail function on a local host with this http://www.toolheap.com/
+
+Also make sure that your php.ini file is edited to listen in on SMTP port 25, you may or may not need to do this because by default I believe it should be port 25. If its not just look for the mail function within the ini file and change it to 25, it should look like this:
+
+[mail function]
+
+; For Win32 only.
+
+; http://php.net/smtp
+
+SMTP = localhost
+
+; http://php.net/smtp-port
+
+smtp_port = 25
+```
 REPO LINKS: GitHub and Pinterest buttons to animate when adding additional parallax features to the site.
 
 ### 4.0 FOOTER
