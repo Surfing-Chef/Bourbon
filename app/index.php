@@ -106,7 +106,6 @@
 
         <h1>Culinaria</h1>
 
-
         <p>Offered here are some of the resources that I tend to frequent while surfing the web.  So much information is available today from so many different sources.  The list of links off to the side are some bookmarks I find useful and below are some of the more content rich sites I visit often.</p>
 
         <ul class="accordion-tabs">
@@ -204,7 +203,7 @@
     </article>
     <!-- End Blog -->
 
-    <!-- GitHub -->
+    <!-- Contacts -->
     <article id="contacts">
       <div class="article-content">
 
