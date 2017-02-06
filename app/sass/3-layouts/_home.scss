@@ -98,14 +98,10 @@
     }// article
 
     #culinary {
-      h1, h3, p:nth-child(2) {
-        color: tint($dark-gray, 75%);
-        text-shadow: 1px 1px shade($dark-gray, 40%);
-      }
-
       p:nth-child(2) {
         @include span-columns(8);
       }
+
         .tab-link {
           color: $blue;
         }
@@ -164,11 +160,6 @@
           }
         }
       }
-    }
-
-    // specific article parallax backgrounds
-    .bg-culinary {
-      background: url('../images/cast-ironDrk.jpg') 0 30%/cover fixed;
     }
 
   } // main
