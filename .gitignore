@@ -80,4 +80,5 @@ Gemfile.lock
 
 # APIs #
 ########
-api.json
+darksky.json
+apifier.json
