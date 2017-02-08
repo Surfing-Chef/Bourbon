@@ -5,12 +5,12 @@
 
 // Load api
 $.ajax({
-   url: './darksky.json',
+   url: './api.json',
    async: false,
    dataType: 'json',
    success: function (data) {
        mydata = data;
-       myapi = data.api;
+       myapi = data.darksky;
    }
 });
 
