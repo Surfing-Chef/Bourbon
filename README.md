@@ -21,6 +21,8 @@ A default quote (WordPress tagline), replaced by a randomly selected quote from 
 ABOUT section: About the site, about me, why this is here?  
 WEATHER aside: Dark Sky aside: `darksky.json` contains a developement API key. This file is not tracked by Git so has to be passed to each development environment seperately.  
 
+Add a links to radar and other weather sites
+
 #### 3.2 Culinaria :: Links
 CULINARIA section:  the fixed background was jumpy because of a bug in IE and Edge.  Removing the top background image that only added a transparent gradient resolved the issue.  
   
