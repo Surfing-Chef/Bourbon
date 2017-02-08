@@ -1,4 +1,4 @@
-# Bourbon-Chef-Site-1.4
+# Bourbon-Chef-Site-1.3
 ### Landing Page
 Content with sidebars  
 > Tags: parallax, side bars, hero landing, back to top button  
