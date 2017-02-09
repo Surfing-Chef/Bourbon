@@ -1,5 +1,5 @@
 # Bourbon-Chef-Site
-### v 1.4 - Migrated to a PHP page workflow 
+### v 1.5 - Migrated to a PHP page workflow
 > Tags: parallax, side bars, hero landing, back to top button, php, browserSync, gulp, sass, scss  
 
 ### 1.0 GENERAL
@@ -25,7 +25,13 @@ Add a links to radar and other weather sites
 
 #### 3.2 Culinaria :: Links
 CULINARIA section:  the fixed background was jumpy because of a bug in IE and Edge.  Removing the top background image that only added a transparent gradient resolved the issue.  
-  
+
+>Adding apifier data feed:  
+
+1. Load json history and then
+2. use the link to load the data.
+
+
 #### 3.3 Coding :: Bookmarks
 
 #### 3.4 Blog :: Recent Posts
@@ -37,13 +43,13 @@ CONTACTS: [Contact Form Tutorial](https://code.tutsplus.com/tutorials/build-a-ne
 Basic contact form that will be replaced with a wordpress plug once migrated. The code from the tutorial works, but to test it from a local server set up without a mail server installed, [the tool mentioned below](http://www.toolheap.com/) works.  Thanks **Michael Stypko** for these pointers in the notes below the tutorial.  Saved me a heap of frustration.  
 
 ```txt
-For those of you having problems receiving emails from the contact form, 
-unless you have a mail server this will not work. 
+For those of you having problems receiving emails from the contact form,
+unless you have a mail server this will not work.
 However you can test the mail function on a local host with this http://www.toolheap.com/
 
-Also make sure that your php.ini file is edited to listen in on SMTP port 25, 
-you may or may not need to do this because by default I believe it should be port 25. 
-If its not just look for the mail function within the ini file and change it to 25, 
+Also make sure that your php.ini file is edited to listen in on SMTP port 25,
+you may or may not need to do this because by default I believe it should be port 25.
+If its not just look for the mail function within the ini file and change it to 25,
 it should look like this:
 
 [mail function]
