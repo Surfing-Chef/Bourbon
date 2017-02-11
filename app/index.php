@@ -214,7 +214,7 @@
     <article id="contacts">
       <div class="article-content">
 
-        <h1>Contacts</h1>
+        <h1>Contact Me</h1>
         <section id="contact-form" class="clearfix">
           <?php
           //init variables
@@ -240,11 +240,17 @@
           </ul>
           <p id="success">Thanks for your message.  We'll be in touch ASAP.</p>
           <form action="process.php" method="post">
-            <label for="name">Name: </label>
-            <input type="text" id="name" name="name" value="" placeholder="John Doe" required="required">
 
-            <label for="email">Email Address: </label>
-            <input type="email" id="email" name="email" value="" placeholder="johndoe@example.com" required="required">
+            <div id="contactInfo">
+              <div class="name">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" value="" placeholder="John Doe" required="required">
+              </div>
+              <div class="email">
+                <label for="email">Email Address: </label>
+                <input type="email" id="email" name="email" value="" placeholder="johndoe@example.com" required="required">
+              </div>
+            </div>
 
             <label for="message">Message: </label>
             <textarea name="message" id="message" placeholder="Your message must be greater than 20 characters" data-minlength="20"></textarea>
@@ -255,10 +261,10 @@
           <?php unset($_SESSION['cf_returndata']); ?>
         </section>
 
-        <aside>
+        <!-- <aside>
           <div class="gitHub"><a href="https://github.com/Surfing-Chef" target="_blank"><img src="images/github-sociocon.png" alt=""></a></div>
           <div class="Pinterest"><a href="https://www.pinterest.com/SurfingChef/" target="_blank"><img src="images/pinterest-sociocon.png" alt=""></a></div>
-        </aside>
+        </aside> -->
 
       </div>
     </article>
