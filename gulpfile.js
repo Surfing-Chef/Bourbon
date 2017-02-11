@@ -14,7 +14,7 @@ var gulp        = require('gulp'),
 //////// Tasks used in development environment ////////
 // Scripts Task - tasks related to js
 gulp.task('scripts', function(){
-  return gulp.src(['app/js/**/*.js', '!app/js/**/*min.js'])
+  gulp.src(['app/js/**/*.js', '!app/js/**/*min.js'])
   .pipe(plumber())
   .pipe(concat('script.min.js'))
   .pipe(gulp.dest('app/js'))
@@ -25,7 +25,7 @@ gulp.task('scripts', function(){
 
 // Sass Task - development css - nested/readable/mapped
 gulp.task('sassDev', function() {
-  return gulp.src('app/sass/**/*.scss')
+  gulp.src('app/sass/**/*.scss')
   .pipe(plumber())
   .pipe(rename({suffix:'.dev'}))
   .pipe(sourcemaps.init())
@@ -38,7 +38,7 @@ gulp.task('sassDev', function() {
 
 // Sass Task - deployment css - compressed/minified/mapped
 gulp.task('sassDep', function(){
-  return gulp.src('app/sass/**/*.scss')
+  gulp.src('app/sass/**/*.scss')
   .pipe(plumber())
   .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}))
