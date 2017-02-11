@@ -143,7 +143,7 @@
         </ul>
 
         <aside>
-          <h3>Of Interest</h3>
+          <h3>Cooking Related</h3>
           <ul>
             <li><a href="#">A Link</a></li>
             <li><a href="#">A Link</a></li>
@@ -172,7 +172,7 @@
         </section>
 
         <aside>
-          <h3>Bookmarks</h3>
+          <h3>Resources</h3>
           <ul>
             <li><a href="#">A Link</a></li>
             <li><a href="#">A Link</a></li>
