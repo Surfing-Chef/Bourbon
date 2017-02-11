@@ -88,18 +88,23 @@
 
     &.show {
       display: block;
+      background: black;
     }
 
     @include media ($horizontal-bar-mode) {
       display: block;
       text-align: center;
     }
+
+    @include media(min-width 320px max-width 900px) {
+      background-color: transparentize(black, 0.2);
+    }
   }
 
   // The nav items
 
   .nav-link:first-child {
-    @include media($horizontal-bar-mode) {
+    @include media ($horizontal-bar-mode) {
       margin-left: $centered-navigation-item-nudge;
     }
   }
