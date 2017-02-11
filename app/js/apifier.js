@@ -32,15 +32,18 @@ $.ajax({
    }
 });
 
-// load data to page
-function displayAplifier(obj){
+// Function :: displayApifier()
+// parses JSON returned from Apifier
+function displayApifier(obj){
   var temp = [];
   var feedArray = [];
+
+  // Sort all object arrays
   Object.keys(obj).forEach(function(key){
     temp.push(obj[key].pageFunctionResult);
   });
 
-  // discard empty arrays
+  // Discard empty arrays
   for(var a=0; a<temp.length; a++){
     for(var b=0; b<5; b++){
       if(temp[a][b].length > 0){
@@ -49,7 +52,7 @@ function displayAplifier(obj){
     }
   }
 
-  // create objects for easy deployment to page
+  // Create objects for easy deployment to page:
   // base, imageUrl, linkUrl, title, topic
   var epicurious = feedArray[0];
   var food52 = feedArray[1];
@@ -57,15 +60,16 @@ function displayAplifier(obj){
   var saveur = feedArray[3];
   var foodandwine = feedArray[4];
 
-  // add label value to each arrays
+  // Add a label value to each array
   epicurious.name = 'epicurious';
   food52.name = 'food52';
   luckypeach.name = 'luckypeach';
   saveur.name = 'saveur';
   foodandwine.name = 'foodandwine';
 
-
-
+  // Function :: show()
+  // displays each item where appropriate,
+  // for css formatting
   function show(obj){
     // get object name
     var objName = obj.name;
@@ -75,26 +79,25 @@ function displayAplifier(obj){
       // if links have http prefix...
       if(dta.linkUrl.startsWith('http://')){
         var tag = $('<a href="'+dta.linkUrl+'" target="_blank">'+dta.title+'</a><br>');
+
         $("#"+objName).append(tag);
       }
       // if links DO NOT have http prefix...
       else {
         var link = dta.base + dta.linkUrl;
-
         var tag1 = $('<a href="'+link+'" target="_blank">'+dta.title+'</a><br>');
+
         $("#"+objName).append(tag1);
       }
     });
   }
 
+  // Display feeds as defined
   show(epicurious);
   show(food52);
   show(luckypeach);
   show(saveur);
   show(foodandwine);
-
-
-
 }
 
 // load APLIFIER data
@@ -103,6 +106,6 @@ $.ajax({
   async: false,
   dataType: 'json',
   success: function (data) {
-    displayAplifier(data);
+    displayApifier(data);
   }
 });
