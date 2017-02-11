@@ -1,6 +1,9 @@
 # Bourbon-Chef-Site
-### v 1.5 - Migrated to a PHP page workflow
-> Tags: parallax, side bars, hero landing, back to top button, php, browserSync, gulp, sass, scss  
+### v 1.6 - Refine and Response
+> Tags: parallax, side bars, hero landing, back to top button, php, browserSync, gulp, sass, scss   
+
+1.6 has reponsiveness at its heart. It will strive to tidy elements of the landing page while maintaining a somewhat generic feel for later styling, all with multi-device responsiveness in mind.  
+
 
 ### 1.0 GENERAL
 The end goal of this website development is simple:  a WordPress site with a landing page.  Since WordPress site structures are php based it only makes sense that Bourbon Chef is developed in a like environment.  Hindsight says this should have been the first thing implemented.  However since this was not the case, development moves ahead with a bit more of an understanding of how gulp and browserSync and WAMP don't always co-operate as simply as one hopes.  It is worth noting that documentation on the internet regarding these issues can be daunting - so much and all well-intended, but overwhelming.  ***Wordpress***, ***wamp***, ***browsersync*** and ***php*** were the keywords that enabled Google to finally [help out](http://duaneblake.co.uk/front-end/how-to-set-up-browsersync-with-wordpress-using-wamp-and-gulp/).  
