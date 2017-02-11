@@ -26,11 +26,7 @@ Add a links to radar and other weather sites
 #### 3.2 Culinaria :: Links
 CULINARIA section:  the fixed background was jumpy because of a bug in IE and Edge.  Removing the top background image that only added a transparent gradient resolved the issue.  
 
->Adding apifier data feed:  
-
-1. Load json history and then
-2. use the link to load the data.
-
+>Added apifier data feed:  
 
 #### 3.3 Coding :: Bookmarks
 
