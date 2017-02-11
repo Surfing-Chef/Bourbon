@@ -66,10 +66,19 @@
           @include border-width(null 3px null);
           @include border-color(null tint($medium-gray, 50%) null null);
           @include border-style(null solid null null);
+
+          @include media(min-width 320px max-width 900px) {
+            @include span-columns(12);
+            border: none;
+          }
         }
 
         aside {
           @include span-columns(4 of 12);
+
+          @include media(min-width 320px max-width 900px) {
+            @include span-columns(12);
+          }
 
           // weather widget
           #weather {
@@ -98,19 +107,35 @@
     }// article
 
     #culinary {
-      p:nth-child(2) {
+      .accordion-tabs {
+        @include media(min-width 320px max-width 900px) {
+          @include span-columns(12);
+        }
+      }
+      
+      p {
         @include span-columns(8);
+
+        @include media(min-width 320px max-width 900px) {
+          @include span-columns(12);
+        }
+      } //p:nth-child(2)
+
+      .article-content {
+        @include media(min-width 320px max-width 900px) {
+          width: 100%;
+        }
       }
 
-        .tab-link {
-          color: $blue;
-        }
-        .tab-link:hover {
-          color: black;
-        }
-        .is-active {
-          color: $base-font-color;
-        }
+      .tab-link {
+        color: $blue;
+      }
+      .tab-link:hover {
+        color: black;
+      }
+      .is-active {
+        color: $base-font-color;
+      }
 
     }
 
@@ -120,7 +145,7 @@
       div {
       padding-bottom: 1em;
 
-        section{
+        section {
           border: none;
           @include span-columns(12);
 
@@ -143,6 +168,7 @@
           #contactInfo  {
             @include span-columns(12);
             padding-bottom: 0;
+
             div {
               @include span-columns(6 of 12);
               input {
@@ -150,8 +176,7 @@
               }
               padding-bottom: 0;
             }
-
-          }
+          } // #contactInfo
 
           textarea {
             height: 100px;
@@ -165,11 +190,13 @@
             color: $base-font-color;
             background-color: $blue;
           }
+
           #submit-button:hover {
             color: $light-gray;
           }
-        }
-        aside{
+        } // section
+
+        aside {
           border: none;
           div{
             padding-top: 5%;
@@ -179,9 +206,10 @@
               margin: 0 auto;
             }
           }
-        }
-      }
-    }
+        } // aside
+
+      } // div.article-content
+    } // #contacts
 
   } // main
   //<< END: main
