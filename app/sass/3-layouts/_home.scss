@@ -80,22 +80,6 @@
             @include span-columns(12);
           }
 
-          // weather widget
-          #weather {
-            position: relative;
-            margin-bottom: 25px;
-
-            span {
-              display: block;
-              margin: 7px 0;
-            }
-            img {
-              margin: 0 auto;
-              opacity: 0.05;
-              position: absolute;
-              top: -50px;
-            }
-          }
           div:nth-child(3) {
             @include span-columns(6);
             @include shift(4);
@@ -106,13 +90,40 @@
       }// div.article-content
     }// article
 
+    // welcome
+    #welcome {
+      // weather widget
+      #weather {
+        position: relative;
+        //margin-bottom: 25px;
+
+        section {
+          border-right: none;
+        }
+
+        span {
+          display: block;
+          margin: 7px 0;
+        }
+        img {
+          margin: 0 auto;
+          opacity: 0.05;
+          position: absolute;
+          top: -50px;
+        }
+      }
+
+
+    }
+
+    // culinaria
     #culinary {
       .accordion-tabs {
         @include media(min-width 320px max-width 900px) {
           @include span-columns(12);
         }
       }
-      
+
       p {
         @include span-columns(8);
 
