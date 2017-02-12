@@ -2,22 +2,26 @@
 ### v 1.6 - Refine and Response
 > Tags: parallax, side bars, hero landing, back to top button, php, browserSync, gulp, sass, scss   
 
-1.6 has reponsiveness at its heart. It will strive to tidy elements of the landing page while maintaining a somewhat generic feel for later styling, all with multi-device responsiveness in mind.  
+v1.6 has reponsiveness at its heart. It will strive to tidy elements of the landing page while maintaining a somewhat generic feel for later styling, all with multi-device responsiveness and WordPress implementation in mind.  
 
 
 ### 1.0 GENERAL
-The end goal of this website development is simple:  a WordPress site with a landing page.  Since WordPress site structures are php based it only makes sense that Bourbon Chef is developed in a like environment.  Hindsight says this should have been the first thing implemented.  However since this was not the case, development moves ahead with a bit more of an understanding of how gulp and browserSync and WAMP don't always co-operate as simply as one hopes.  It is worth noting that documentation on the internet regarding these issues can be daunting - so much and all well-intended, but overwhelming.  ***Wordpress***, ***wamp***, ***browsersync*** and ***php*** were the keywords that enabled Google to finally [help out](http://duaneblake.co.uk/front-end/how-to-set-up-browsersync-with-wordpress-using-wamp-and-gulp/).  
+The end goal of this website development is simple:  a WordPress site with a landing page.  Since WordPress site structures are PHP based it only makes sense that Bourbon Chef is developed in a like environment.  Hindsight says this should have been the first thing implemented.  However since this was not the case, development moves ahead with a bit more of an understanding of how gulp and browserSync and WAMP don't always co-operate as simply as one hopes.  It is worth noting that documentation on the internet regarding these issues can be daunting - so much and all well-intended, but overwhelming.  ***Wordpress***, ***wamp***, ***browsersync*** and ***php*** were the keywords that enabled Google to finally [help out](http://duaneblake.co.uk/front-end/how-to-set-up-browsersync-with-wordpress-using-wamp-and-gulp/).  
 
 Enhanced parallax features such as various scroll speeds in header and culinaria sections, as well as animated buttons (contact section) are planned.
 
 ### 2.0 HEADER
 #### 2.1 Main Navigation
-Start with a basic, responsive top menu.  Links go to page sections as with a one page website.  
-There is a floating arrow on the right of the site that takes a visitor back to the top.  Maybe adjust the animation flow/speed?
+Start with a basic, responsive top menu.  Links go to page sections as with a one page website.
 
+>Adjust parallax:  use background parallax instead of callout
+
+There is a floating arrow on the right of the site that takes a visitor back to the top.  
 
 #### 2.2 Callout
 A default quote (WordPress tagline), replaced by a randomly selected quote from a custom library.
+
+>Future use of apifier to pull random quotes
 
 ### 3.0 MAIN CONTENT
 #### 3.1 About :: Weather
@@ -32,9 +36,12 @@ CULINARIA section:  the fixed background was jumpy because of a bug in IE and Ed
 >Added apifier data feed:  
 
 #### 3.3 Coding :: Bookmarks
+Latest Experiments
 
 #### 3.4 Blog :: Recent Posts
-BLOG section: Display a most recent blog entry?  Section might not exist in final deployment, the link at the top of the page might be all that is required for referencing the blog poriton of the site.  
+>Content will be pulled from WordPress DB  
+
+BLOG section: Display a most recent blog entry?  Section might not exist in final deployment, the link at the top of the page might be all that is required for referencing the blog portion of the site.  
 RECENT POSTS: self explanatory  
 
 #### 3.5 Contacts :: Repo Links
@@ -63,10 +70,11 @@ SMTP = localhost
 
 smtp_port = 25
 ```
-REPO LINKS: GitHub and Pinterest buttons to animate when adding additional parallax features to the site.
 
 ### 4.0 FOOTER
-Parallax in that it appears as scroll takes the page up.
+Parallax in that it appears as scroll takes the page up.  
+
+Simple icons and copyright tagline.
 
 
 ### 5.0 THANKS FOR ALL THE FISH...
@@ -81,3 +89,4 @@ Parallax in that it appears as scroll takes the page up.
 [Dark Sky PHP Tut](http://lekkerlogic.com/2015/08/dark-sky-forecast-io-weather-api-part-1/)
 [Sitepoint AJAX tut](https://www.sitepoint.com/ajaxjquery-getjson-simple-example/)  
 [WAMP GULP AND BROWSERSYNC -  a gulpfile that works with PHP](http://duaneblake.co.uk/front-end/how-to-set-up-browsersync-with-wordpress-using-wamp-and-gulp/)  
+[Apifier Homepage](https://www.apifier.com/) - super basic setup tuts, requires intermediate knowledge of jQuery selectors and functions
