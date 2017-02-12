@@ -125,7 +125,7 @@
       }
 
       p {
-        @include span-columns(8);
+        @include span-columns(12);
 
         @include media(min-width 320px max-width 900px) {
           @include span-columns(12);
@@ -236,13 +236,35 @@
     $bg2: transparentize(white, 0.5);
     @include texture($bg1, $bg2, 85, 1);
     bottom: 0;
-    @include padding(2.5% null null null);
     z-index: -1;
 
-    section{
-      @include span-columns(6);
-      @include shift(3);
-    } // footer section
+    .footer-container {
+      @include outer-container;
+      @include padding(1% 2.5% null 2.5%);
+
+    }
+
+    section {
+      @include clearfix;
+
+      p {
+        text-align: center;
+      }
+    }
+
+
+    .sociocon {
+      @include span-columns(4 of 12);
+      @include omega(3n);
+      height: 120px;
+      margin-bottom: 0.6em;
+      img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 auto;
+      }
+    } // section
   } // footer
   //<< END: footer
 

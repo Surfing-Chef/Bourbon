@@ -143,7 +143,7 @@
         </ul>
 
         <aside>
-          <h3>Cooking Related</h3>
+          <h3>Of Interest</h3>
           <ul>
             <li><a href="#">A Link</a></li>
             <li><a href="#">A Link</a></li>
@@ -172,7 +172,7 @@
         </section>
 
         <aside>
-          <h3>Resources</h3>
+          <h3>Bookmarks</h3>
           <ul>
             <li><a href="#">A Link</a></li>
             <li><a href="#">A Link</a></li>
@@ -269,17 +269,27 @@
       </div>
     </article>
     <!-- End Contacts -->
+
   </main>
   <!-- END MAIN  -->
 
   <!-- FOOTER -->
   <footer>
+    <div class="footer-container">
+      <section class="sociocon">
+        <img src="images/pinterest-sociocon.png" alt="">
+      </section>
+      <section class="sociocon">
+        <img src="images/github-sociocon.png" alt="">
+      </section>
+      <section class="sociocon">
+        <img src="images/email-sociocon.png" alt="">
+      </section>
+      <section>
+        <p>Powered by WordPress. Maintained with love. Copyright 2017 Surfing-Chef</p>
+      </section>
+    </div>
 
-    <!-- section -->
-    <section>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </section>
-    <!-- End section -->
   </footer>
   <!-- END FOOTER  -->
 
