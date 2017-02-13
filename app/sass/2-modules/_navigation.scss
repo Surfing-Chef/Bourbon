@@ -88,7 +88,6 @@
 
     &.show {
       display: block;
-      background: black;
     }
 
     @include media ($horizontal-bar-mode) {

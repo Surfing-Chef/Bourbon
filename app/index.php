@@ -8,7 +8,6 @@
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" href="css/style.css">
 
   <link href='//fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
 
@@ -16,18 +15,32 @@
 
   <link rel="stylesheet" href="css/font-awesome.css" />
 
-  <link href='//fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-  <title>Bourbon-Chef 1.3</title>
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <title>Bourbon-Chef 1.6</title>
 
 </head>
 <body class="home type-system-geometric">
   <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->  <!-- HEADER -->
-  <header>
+  <![endif]-->
+
+  <!-- HEADER -->
+  <header  id="js-parallax-window" class="parallax-window">
+
+    <div class="parallax-static-content">
+      <!-- callout -->
+      <section class="callout">
+        <div class="callout-container">
+          <p class="quote">Everyday carry crucifix meditation, ethical chicharrones godard gluten-free meditation, ethical chicharrones godard gluten-free meh meditation, ethical chicharrones godard gluten-free occupy bitters cliche tousled mustache master cleanse DIY. Cred tattooed vinyl.</p>
+          <p class="author">Hipster O'Leary</p>
+        </div>
+      </section>
+      <!-- End callout -->
+    </div>
 
     <!-- centered-navigation -->
     <section class="centered-navigation" role="banner">
@@ -55,15 +68,7 @@
     </section>
     <!-- End centered-navigation -->
 
-    <!-- callout -->
-    <section class="callout">
-      <div class="callout-container">
-        <p class="quote">Everyday carry crucifix meditation, ethical chicharrones godard gluten-free meditation, ethical chicharrones godard gluten-free meh meditation, ethical chicharrones godard gluten-free occupy bitters cliche tousled mustache master cleanse DIY. Cred tattooed vinyl.</p>
-        <p class="author">Hipster O'Leary</p>
-      </div>
-    </section>
-    <!-- End callout -->
-
+    <div id="js-parallax-background" class="parallax-background"></div>
   </header>
   <!-- END HEADER -->
 
