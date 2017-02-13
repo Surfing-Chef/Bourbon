@@ -282,13 +282,13 @@
   <footer>
     <div class="footer-container">
       <section class="sociocon">
-        <img src="images/pinterest-sociocon.png" alt="">
+        <img class="icon" src="images/pinterest-sociocon.png" alt="link to Surfing Chef on Pinterest">
       </section>
       <section class="sociocon">
-        <img src="images/github-sociocon.png" alt="">
+        <img class="icon" src="images/github-sociocon.png" alt="link to Surfing Chef on GitHub">
       </section>
       <section class="sociocon">
-        <img src="images/email-sociocon.png" alt="">
+        <img class="icon" src="images/email-sociocon.png" alt="email Surfing Chef">
       </section>
       <section>
         <p>Powered by WordPress. Maintained with love. Copyright 2017 Surfing-Chef</p>
@@ -306,7 +306,8 @@
 
     <!-- +++++ NO SCRIPTS BEFORE THIS COMMENT +++++ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 
     <!-- +++++ All SCRIPTS AFTER THIS COMMENT +++++ -->
 

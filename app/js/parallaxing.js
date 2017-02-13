@@ -9,6 +9,7 @@ $(window).scroll(function(){
 
 });
 
+// SCROLLING HEADER
 $(document).ready(function() {
   if ($("#js-parallax-window").length) {
     parallax();
