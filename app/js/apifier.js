@@ -4,7 +4,7 @@
 // Saveur.com and Foodandwine.com
 //------------------------------------------------------------------//
 
-// Load api
+// Load Apifier API
 $.ajax({
    url: './apifier.json',
    async: false,
@@ -12,7 +12,10 @@ $.ajax({
    success: function (data) {
        //apifierData = data;
        apifierApi = data.user;
-   }
+   },
+   error: function() {
+        alert("Darn it! The Apifier API wasn't loaded.");
+      }
 });
 
 // VARIABLES
@@ -29,7 +32,10 @@ $.ajax({
    dataType: 'json',
    success: function (data) {
      apifierSettings = data.lastExecution.resultsUrl;
-   }
+   },
+   error: function(XMLHttpRequest, textStatus, errorThrown) {
+        alert("Oops! The Apifier settings weren't found.");
+      }
 });
 
 // Function :: displayApifier()
@@ -107,5 +113,8 @@ $.ajax({
   dataType: 'json',
   success: function (data) {
     displayApifier(data);
-  }
+  },
+  error: function(XMLHttpRequest, textStatus, errorThrown) {
+       alert("Oh snap! Data from Apifier wasn't loaded.");
+     }
 });

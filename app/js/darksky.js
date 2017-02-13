@@ -11,6 +11,9 @@ $.ajax({
    success: function (data) {
        mydata = data;
        myapi = data.api;
+   },
+   error: function () {
+     alert("Oops! Something went wrong while loading the Dark Sky API.");
    }
 });
 
@@ -84,8 +87,7 @@ $.ajax({
   dataType: 'jsonp',
   jsonpCallback: 'weatherData', // the function to call
   jsonp: 'callback', // name of the var specifying the callback in the request
-  error: function (xhr, errorType, exception) {
-    var errorMessage = exception || xhr.statusText;
-    alert("Excep:: " + exception + "Status:: " + xhr.statusText);
+  error: function () {
+    alert("Oh oh! Had a hiccup getting weather data from Dark Sky." );
   }
 });
