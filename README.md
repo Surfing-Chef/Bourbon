@@ -75,7 +75,7 @@ smtp_port = 25
 Parallax in that it appears as scroll takes the page up.  
 
 Simple icons and copyright tagline.
-
+>Started using GreenSock  Lots of animation potential
 
 ### 5.0 THANKS FOR ALL THE FISH...
 [Bootstrap Font Awesome CDN](https://www.bootstrapcdn.com/fontawesome/)  
@@ -89,4 +89,6 @@ Simple icons and copyright tagline.
 [Dark Sky PHP Tut](http://lekkerlogic.com/2015/08/dark-sky-forecast-io-weather-api-part-1/)
 [Sitepoint AJAX tut](https://www.sitepoint.com/ajaxjquery-getjson-simple-example/)  
 [WAMP GULP AND BROWSERSYNC -  a gulpfile that works with PHP](http://duaneblake.co.uk/front-end/how-to-set-up-browsersync-with-wordpress-using-wamp-and-gulp/)  
-[Apifier Homepage](https://www.apifier.com/) - super basic setup tuts, requires intermediate knowledge of jQuery selectors and functions
+[Apifier Homepage](https://www.apifier.com/) - super basic setup tuts, requires intermediate knowledge of jQuery selectors and functions  
+[GreenSock](https://greensock.com/)  
+[Lots of good parallax info](http://www.vandelaydesign.com/parallax-scrolling-best-practices-examples-and-tutorials/)  
