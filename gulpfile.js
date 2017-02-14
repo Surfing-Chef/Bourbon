@@ -8,7 +8,8 @@ var gulp        = require('gulp'),
     sourcemaps  = require('gulp-sourcemaps'),
     concat = require('gulp-concat'),
     del = require('del'),
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'),
+    imagemin = require('gulp-imagemin');
 
 // DEVELOPMENT TASKS
 //////// Tasks used in development environment ////////
@@ -75,8 +76,15 @@ gulp.task('build:cleanfolder', function(){
 
 // create build directory for all files
 gulp.task('build:copy', ['build:cleanfolder'], function(){
-  return gulp.src('./app/**/*/')
+  return gulp.src(['./app/**/*/', '!./app/images/**/*' ])
   .pipe(gulp.dest('./build/'));
+});
+
+// minimize images in deployment directory
+gulp.task('build:imgMin', function(){
+    gulp.src('./app/images/**/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./build/images'));
 });
 
 // remove unwanted build files and directories
@@ -88,4 +96,4 @@ gulp.task('build:remove', ['build:copy'], function(done){
 });
 
 // main build task
-gulp.task('build', ['build:copy', 'build:remove']);
+gulp.task('build', ['build:copy', 'build:imgMin', 'build:remove']);
